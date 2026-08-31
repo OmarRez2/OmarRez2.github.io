@@ -1,0 +1,191 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) * 0.65);
+  --radius-md: calc(var(--radius) * 0.85);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.35);
+  --radius-2xl: calc(var(--radius) * 1.75);
+  --radius-3xl: calc(var(--radius) * 2.2);
+}
+
+:root {
+  --background: oklch(0.985 0.006 255);
+  --foreground: oklch(0.18 0.03 258);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.03 258);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.03 258);
+  --primary: oklch(0.57 0.20 254);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.955 0.014 255);
+  --secondary-foreground: oklch(0.24 0.04 258);
+  --muted: oklch(0.95 0.012 255);
+  --muted-foreground: oklch(0.50 0.035 258);
+  --accent: oklch(0.93 0.03 227);
+  --accent-foreground: oklch(0.30 0.08 251);
+  --destructive: oklch(0.60 0.22 25);
+  --border: oklch(0.90 0.017 255);
+  --input: oklch(0.90 0.017 255);
+  --ring: oklch(0.64 0.18 242);
+  --radius: 0.9rem;
+}
+
+.dark {
+  --background: oklch(0.12 0.025 260);
+  --foreground: oklch(0.97 0.01 250);
+  --card: oklch(0.16 0.032 260);
+  --card-foreground: oklch(0.97 0.01 250);
+  --popover: oklch(0.16 0.032 260);
+  --popover-foreground: oklch(0.97 0.01 250);
+  --primary: oklch(0.71 0.17 235);
+  --primary-foreground: oklch(0.13 0.03 260);
+  --secondary: oklch(0.20 0.035 260);
+  --secondary-foreground: oklch(0.95 0.01 250);
+  --muted: oklch(0.19 0.032 260);
+  --muted-foreground: oklch(0.70 0.03 255);
+  --accent: oklch(0.23 0.052 250);
+  --accent-foreground: oklch(0.93 0.03 225);
+  --destructive: oklch(0.68 0.20 23);
+  --border: oklch(0.98 0.01 250 / 0.11);
+  --input: oklch(0.98 0.01 250 / 0.14);
+  --ring: oklch(0.71 0.17 235);
+}
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  html { scroll-behavior: smooth; scrollbar-gutter: stable; overflow-x: hidden; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Segoe UI Variable", "Segoe UI", Inter, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: color-mix(in oklch, var(--primary) 30%, transparent); }
+  a, button, input, textarea { -webkit-tap-highlight-color: transparent; }
+}
+
+@layer components {
+  .container-shell {
+    width: min(100% - 2rem, 76rem);
+    margin-inline: auto;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 1.75rem;
+    height: 1px;
+    background: currentColor;
+  }
+  .text-gradient {
+    background: linear-gradient(115deg, #56d9ff 5%, #4f8dff 45%, #a679ff 92%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .glass-surface {
+    border: 1px solid color-mix(in oklch, var(--border) 82%, transparent);
+    background: color-mix(in oklch, var(--card) 82%, transparent);
+    box-shadow: 0 28px 80px -45px color-mix(in oklch, var(--primary) 32%, transparent);
+    backdrop-filter: blur(18px);
+  }
+  .hero-grid {
+    background-image:
+      linear-gradient(to right, color-mix(in oklch, var(--border) 45%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklch, var(--border) 45%, transparent) 1px, transparent 1px);
+    background-size: 54px 54px;
+    mask-image: linear-gradient(to bottom, black 0%, transparent 82%);
+  }
+  .ambient-data-grid {
+    background-image:
+      linear-gradient(to right, color-mix(in oklch, var(--primary) 45%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklch, var(--primary) 45%, transparent) 1px, transparent 1px),
+      radial-gradient(circle at 18% 22%, color-mix(in oklch, var(--primary) 55%, transparent) 0 1.5px, transparent 2px),
+      radial-gradient(circle at 78% 65%, color-mix(in oklch, var(--primary) 45%, transparent) 0 1.5px, transparent 2px);
+    background-position: 0 0, 0 0, 0 0, 0 0;
+    background-size: 72px 72px, 72px 72px, 288px 288px, 360px 360px;
+    mask-image: radial-gradient(ellipse at center, black 0%, transparent 76%);
+    animation: ambient-grid-drift 28s linear infinite;
+  }
+  .motion-shine {
+    position: relative;
+    overflow: hidden;
+  }
+  .motion-shine::after {
+    content: "";
+    position: absolute;
+    inset: -120% auto -120% -45%;
+    width: 28%;
+    transform: rotate(16deg);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.16), transparent);
+    transition: left 800ms cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+  }
+  .motion-shine:hover::after { left: 125%; }
+  .section-pad { padding-block: clamp(5rem, 9vw, 8rem); }
+  .skip-link {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 100;
+    transform: translateY(-160%);
+    border-radius: 0.75rem;
+    background: var(--foreground);
+    color: var(--background);
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    transition: transform 180ms ease;
+  }
+  .skip-link:focus { transform: translateY(0); }
+}
+
+@keyframes ambient-grid-drift {
+  from { background-position: 0 0, 0 0, 0 0, 0 0; }
+  to { background-position: 72px 36px, 72px 36px, 144px 72px, -180px 90px; }
+}
+
+@media (min-width: 640px) {
+  .container-shell { width: min(100% - 3rem, 76rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .ambient-data-grid { animation: none; }
+}
