@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Award, BadgeCheck, BookOpenCheck, Sparkles } from "lucide-react";
+import { ArrowRight, BarChart3, Sparkles } from "lucide-react";
+import { CertificateGallery } from "@/components/certificate-gallery";
 import { Button } from "@/components/ui/button";
 import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
@@ -18,36 +19,9 @@ export const metadata: Metadata = {
   },
 };
 
-type Certificate = (typeof certificates)[number];
-
-function CertificateCard({ certificate, index }: { certificate: Certificate; index: number }) {
-  return (
-    <Reveal
-      delay={(index % 3) * 0.05}
-      className="group relative flex min-h-72 flex-col overflow-hidden rounded-[1.75rem] border border-border/70 bg-card p-6 transition hover:-translate-y-1 hover:border-primary/35 hover:shadow-2xl hover:shadow-primary/6 sm:p-7"
-    >
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/70 to-transparent opacity-0 transition group-hover:opacity-100" />
-      <div className="flex items-start justify-between gap-4">
-        <span className="grid size-12 place-items-center rounded-2xl bg-gradient-to-br from-cyan-400/15 via-blue-500/15 to-violet-500/15 text-primary">
-          {certificate.type === "Recognition" ? <Award className="size-6" /> : certificate.type === "Training" ? <BookOpenCheck className="size-6" /> : <BadgeCheck className="size-6" />}
-        </span>
-        <div className="flex flex-wrap justify-end gap-2">
-          {certificate.date.toLowerCase().includes("progress") ? (
-            <span className="rounded-full bg-emerald-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-emerald-500">Current</span>
-          ) : null}
-          <span className="rounded-full border border-border bg-background px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">{certificate.type}</span>
-        </div>
-      </div>
-      <p className="mt-7 text-xs font-semibold uppercase tracking-[0.15em] text-primary">{certificate.date}</p>
-      <h3 className="mt-3 text-xl font-semibold tracking-[-0.025em]">{certificate.title}</h3>
-      <p className="mt-2 text-sm font-semibold text-muted-foreground">{certificate.issuer}</p>
-      <p className="mt-5 text-sm leading-7 text-muted-foreground">{certificate.detail}</p>
-    </Reveal>
-  );
-}
-
 export default function CertificatesPage() {
-  const technicalCredentials = certificates.filter((certificate) => certificate.type !== "Recognition");
+  const currentTrack = certificates.find((certificate) => certificate.date.toLowerCase().includes("progress"));
+  const technicalCredentials = certificates.filter((certificate) => certificate.type !== "Recognition" && certificate.image);
   const recognition = certificates.filter((certificate) => certificate.type === "Recognition");
 
   return (
@@ -59,6 +33,32 @@ export default function CertificatesPage() {
       />
       <section className="section-pad">
         <div className="container-shell">
+          {currentTrack ? (
+            <Reveal className="relative mb-16 overflow-hidden rounded-[2rem] border border-emerald-500/20 bg-gradient-to-br from-emerald-500/10 via-card to-primary/7 p-6 sm:p-8">
+              <div className="absolute -right-10 -top-16 size-48 rounded-full bg-emerald-400/10 blur-3xl" />
+              <div className="relative flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex items-start gap-4">
+                  <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-emerald-500/12 text-emerald-500">
+                    <BarChart3 className="size-6" />
+                  </span>
+                  <div>
+                    <div className="flex flex-wrap items-center gap-3">
+                      <p className="eyebrow text-emerald-500">Current learning journey</p>
+                      <span className="rounded-full bg-emerald-500/12 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-emerald-500">In progress</span>
+                    </div>
+                    <h2 className="mt-3 text-2xl font-semibold tracking-[-0.035em] sm:text-3xl">{currentTrack.title}</h2>
+                    <p className="mt-2 text-sm font-semibold text-muted-foreground">{currentTrack.issuer} · {currentTrack.date}</p>
+                    <p className="mt-4 max-w-2xl text-sm leading-7 text-muted-foreground">{currentTrack.detail}</p>
+                  </div>
+                </div>
+                <div className="w-fit shrink-0 rounded-2xl border border-border/70 bg-background/65 px-6 py-4 text-left sm:text-right">
+                  <p className="text-3xl font-semibold tracking-[-0.05em] text-foreground">214h</p>
+                  <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.15em] text-muted-foreground">Professional program</p>
+                </div>
+              </div>
+            </Reveal>
+          ) : null}
+
           <Reveal className="flex flex-col gap-5 border-b border-border/70 pb-8 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="eyebrow">Technical credentials</p>
@@ -66,10 +66,8 @@ export default function CertificatesPage() {
             </div>
             <p className="max-w-md text-sm leading-7 text-muted-foreground">Focused learning across analytics, SQL, AI, Python, and the foundations behind reliable data products.</p>
           </Reveal>
-          <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {technicalCredentials.map((certificate, index) => (
-              <CertificateCard key={`${certificate.title}-${certificate.issuer}`} certificate={certificate} index={index} />
-            ))}
+          <div className="mt-8">
+            <CertificateGallery certificates={technicalCredentials} />
           </div>
 
           <Reveal className="mt-16 flex items-center gap-4">
@@ -79,10 +77,8 @@ export default function CertificatesPage() {
               <h2 className="mt-3 text-2xl font-semibold tracking-[-0.035em] sm:text-3xl">Professional impact beyond coursework.</h2>
             </div>
           </Reveal>
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
-            {recognition.map((certificate, index) => (
-              <CertificateCard key={`${certificate.title}-${certificate.issuer}`} certificate={certificate} index={index} />
-            ))}
+          <div className="mt-8">
+            <CertificateGallery certificates={recognition} />
           </div>
         </div>
       </section>

@@ -32,6 +32,9 @@
 /public/vercel.svg
 /public/window.svg
 
+# Local certificate source uploads (optimized copies are published)
+/Certifcations/
+
 # misc
 .DS_Store
 *.pem

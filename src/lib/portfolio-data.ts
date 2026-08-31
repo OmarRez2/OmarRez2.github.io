@@ -220,7 +220,16 @@ export const experiences = [
   },
 ];
 
-export const certificates = [
+export type Certificate = {
+  title: string;
+  issuer: string;
+  date: string;
+  detail: string;
+  type: "Professional track" | "Certification" | "Training" | "Recognition";
+  image?: string;
+};
+
+export const certificates: Certificate[] = [
   {
     title: "Professional Data Analyst Track",
     issuer: "DEPI - MCIT",
@@ -234,6 +243,7 @@ export const certificates = [
     date: "April 2025",
     detail: "Advanced SQL certification. Credential ID: vdkebl3jgw.",
     type: "Certification",
+    image: "/images/certificates/almentor-sql-masterclass.jpg",
   },
   {
     title: "Artificial Intelligence",
@@ -241,6 +251,7 @@ export const certificates = [
     date: "July - October 2023",
     detail: "Hands-on data science and AI training using Python and machine learning fundamentals.",
     type: "Certification",
+    image: "/images/certificates/samsung-ai.jpg",
   },
   {
     title: "Web Development Using Python",
@@ -248,6 +259,7 @@ export const certificates = [
     date: "September - October 2022",
     detail: "150 hours covering HTML, CSS, JavaScript, PostgreSQL, Python, and Django.",
     type: "Training",
+    image: "/images/certificates/iti-python-web-development.jpg",
   },
   {
     title: "Data Analysis Track",
@@ -255,6 +267,7 @@ export const certificates = [
     date: "2023",
     detail: "Attendance and participation in the Volunteers Empowerment Program data analysis track.",
     type: "Training",
+    image: "/images/certificates/ieee-data-analysis.jpg",
   },
   {
     title: "Codeavour 6.0 Judge Recognition",
@@ -262,6 +275,7 @@ export const certificates = [
     date: "February 2025",
     detail: "Recognition for evaluating young innovators and providing structured technical feedback.",
     type: "Recognition",
+    image: "/images/certificates/codeavour-judge.jpg",
   },
 ];
 
