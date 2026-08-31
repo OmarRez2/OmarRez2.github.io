@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BarChart3, CheckCircle2, Database, Download, Sparkles } from "lucide-react";
@@ -8,6 +9,16 @@ import { ProjectCard } from "@/components/project-card";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { experiences, projects, skills } from "@/lib/portfolio-data";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Omar Rezk | Data Analyst & Power BI Developer",
+    description: "Power BI dashboards, analytics case studies, SQL, and Python projects.",
+    url: "/",
+    images: [{ url: "/images/omar-hero.webp", width: 1775, height: 887, alt: "Omar Rezk" }],
+  },
+};
 
 const impact = [
   { value: 2, suffix: "+", label: "Years in data & AI" },
@@ -42,7 +53,7 @@ export default function Home() {
               Data made clear. <span className="text-gradient">Decisions made better.</span>
             </h1>
             <p className="mt-7 max-w-xl text-pretty text-base leading-8 text-muted-foreground sm:text-lg">
-              I&apos;m Omar Rezk. I build decision-ready analytics experiences using Power BI, SQL, Python, and thoughtful business storytelling.
+              I&apos;m Omar Rezk. I turn raw data into clear business decisions through trusted Power BI, SQL, and Python solutions that people can actually use.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Button render={<Link href="/projects" />} size="lg" className="motion-shine h-13 rounded-full bg-gradient-to-r from-cyan-500 via-blue-600 to-violet-600 px-7 text-white shadow-xl shadow-blue-500/20 hover:opacity-90">

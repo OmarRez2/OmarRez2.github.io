@@ -8,6 +8,13 @@ import { projects } from "@/lib/portfolio-data";
 export const metadata: Metadata = {
   title: "Projects",
   description: "Power BI, SQL, Python, and business intelligence case studies by Omar Rezk.",
+  alternates: { canonical: "/projects" },
+  openGraph: {
+    title: "Analytics Projects & Case Studies | Omar Rezk",
+    description: "Power BI, SQL, Python, and business intelligence case studies by Omar Rezk.",
+    url: "/projects",
+    images: [{ url: "/images/projects/sales-overview.webp", alt: "Sales Intelligence Hub dashboard" }],
+  },
 };
 
 const kaggleProjects = [

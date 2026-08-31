@@ -12,6 +12,13 @@ import { experiences, skills } from "@/lib/portfolio-data";
 export const metadata: Metadata = {
   title: "About",
   description: "Experience, skills, education, and professional profile of data analyst Omar Rezk.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About Omar Rezk | Data Analyst & Power BI Developer",
+    description: "Experience, skills, education, and professional profile of data analyst Omar Rezk.",
+    url: "/about",
+    images: [{ url: "/images/omar-hero.webp", width: 1775, height: 887, alt: "Omar Rezk" }],
+  },
 };
 
 export default function AboutPage() {

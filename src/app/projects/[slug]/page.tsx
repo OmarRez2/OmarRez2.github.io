@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Code2, Layers3 } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Code2, Layers3, Lightbulb, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Parallax } from "@/components/parallax";
 import { Reveal } from "@/components/reveal";
@@ -21,7 +21,19 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   return {
     title: project.title,
     description: project.description,
-    openGraph: { title: `${project.title} | Omar Rezk`, description: project.description, images: [project.image] },
+    alternates: { canonical: `/projects/${project.slug}` },
+    openGraph: {
+      title: `${project.title} | Omar Rezk`,
+      description: project.description,
+      url: `/projects/${project.slug}`,
+      images: [{ url: project.image, alt: `${project.title} dashboard` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | Omar Rezk`,
+      description: project.description,
+      images: [project.image],
+    },
   };
 }
 
@@ -31,9 +43,27 @@ export default async function ProjectDetailsPage({ params }: ProjectPageProps) {
   const project = projects[index];
   if (!project) notFound();
   const nextProject = projects[(index + 1) % projects.length];
+  const projectJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: project.title,
+    description: project.description,
+    url: `https://omarrez2.github.io/projects/${project.slug}`,
+    image: `https://omarrez2.github.io${project.image}`,
+    author: {
+      "@type": "Person",
+      name: "Omar Rezk",
+      url: "https://omarrez2.github.io",
+    },
+    keywords: project.tech.join(", "),
+  };
 
   return (
     <article>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectJsonLd).replace(/</g, "\\u003c") }}
+      />
       <header className="relative overflow-hidden border-b border-border/70 pt-32">
         <div className="hero-grid absolute inset-0 -z-20 opacity-45" />
         <div className="absolute right-0 top-0 -z-10 size-[32rem] rounded-full bg-primary/10 blur-3xl" />
@@ -76,6 +106,15 @@ export default async function ProjectDetailsPage({ params }: ProjectPageProps) {
               </Reveal>
             ))}
           </div>
+          <Reveal className="mt-5 flex flex-col gap-4 rounded-3xl border border-primary/18 bg-primary/7 p-6 sm:flex-row sm:items-start sm:p-7">
+            <span className="grid size-11 shrink-0 place-items-center rounded-2xl bg-primary text-primary-foreground shadow-lg shadow-primary/20">
+              <Target className="size-5" />
+            </span>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-primary">Decision brief</p>
+              <p className="mt-2 max-w-4xl text-base font-medium leading-8 text-foreground/85">{project.decision}</p>
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -124,6 +163,29 @@ export default async function ProjectDetailsPage({ params }: ProjectPageProps) {
               ))}
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="section-pad">
+        <div className="container-shell grid gap-12 lg:grid-cols-[0.68fr_1.32fr] lg:gap-20">
+          <Reveal>
+            <span className="grid size-12 place-items-center rounded-2xl bg-gradient-to-br from-cyan-400/15 via-blue-500/15 to-violet-500/15 text-primary">
+              <Lightbulb className="size-6" />
+            </span>
+            <p className="mt-6 eyebrow">Recommendations</p>
+            <h2 className="mt-5 text-3xl font-semibold tracking-[-0.04em] sm:text-4xl">How the findings can guide action.</h2>
+            <p className="mt-5 text-sm leading-7 text-muted-foreground">Practical next steps derived from the analysis—not generic dashboard observations.</p>
+          </Reveal>
+          <div className="grid gap-4">
+            {project.recommendations.map((item, itemIndex) => (
+              <Reveal key={item} delay={itemIndex * 0.05} className="group flex gap-5 rounded-3xl border border-border/70 bg-card p-6 transition hover:border-primary/35 hover:shadow-xl hover:shadow-primary/5 sm:p-7">
+                <span className="grid size-10 shrink-0 place-items-center rounded-xl border border-primary/20 bg-primary/8 text-sm font-bold text-primary transition group-hover:bg-primary group-hover:text-primary-foreground">
+                  {String(itemIndex + 1).padStart(2, "0")}
+                </span>
+                <p className="pt-1 text-sm leading-7 text-muted-foreground sm:text-base sm:leading-8">{item}</p>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 

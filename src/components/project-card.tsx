@@ -58,7 +58,7 @@ export function ProjectCard({ project, priority = false, showStats = false }: { 
         <div className="flex flex-1 flex-col p-6 sm:p-7">
           <div className="flex items-start justify-between gap-5">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">{project.year}</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Case study · {project.year}</p>
               <h3 className="mt-2 text-xl font-semibold tracking-[-0.025em] sm:text-2xl">{project.title}</h3>
             </div>
             <span className="grid size-11 shrink-0 place-items-center rounded-full border border-border bg-background transition duration-300 group-hover:rotate-6 group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground">
@@ -76,6 +76,10 @@ export function ProjectCard({ project, priority = false, showStats = false }: { 
               ))}
             </div>
           ) : null}
+          <div className="mt-5 rounded-2xl border border-primary/12 bg-primary/6 p-4">
+            <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-primary">Decision focus</p>
+            <p className="mt-2 line-clamp-2 text-xs leading-5 text-muted-foreground">{project.decision}</p>
+          </div>
           <div className="mt-auto flex flex-wrap gap-2 pt-5">
             {project.tech.slice(0, showStats ? 3 : 4).map((item) => (
               <span key={item} className="rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">

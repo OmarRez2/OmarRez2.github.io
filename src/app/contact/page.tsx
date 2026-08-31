@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
 import { Code2, Link2, Mail, MapPin, Phone } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
+import { CopyEmailButton } from "@/components/copy-email-button";
 import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 
 export const metadata: Metadata = {
   title: "Contact",
   description: "Contact Omar Rezk for Data Analyst, BI Analyst, Power BI, and analytics opportunities.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact Omar Rezk | Data Analyst & Power BI Developer",
+    description: "Contact Omar Rezk for Data Analyst, BI Analyst, Power BI, and analytics opportunities.",
+    url: "/contact",
+    images: [{ url: "/images/omar-hero.webp", width: 1775, height: 887, alt: "Omar Rezk" }],
+  },
 };
 
 const contactItems = [
@@ -47,7 +55,8 @@ export default function ContactPage() {
                 );
               })}
             </div>
-            <div className="mt-7 flex gap-3">
+            <div className="mt-7 flex flex-wrap items-center gap-3">
+              <CopyEmailButton />
               <a href="https://www.linkedin.com/in/omar-rezk-70868b211/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="grid size-11 place-items-center rounded-full border border-border bg-card text-muted-foreground transition hover:-translate-y-1 hover:border-primary/35 hover:text-primary"><Link2 className="size-5" /></a>
               <a href="https://github.com/OmarRez2" target="_blank" rel="noreferrer" aria-label="GitHub" className="grid size-11 place-items-center rounded-full border border-border bg-card text-muted-foreground transition hover:-translate-y-1 hover:border-primary/35 hover:text-primary"><Code2 className="size-5" /></a>
               <a href="https://www.kaggle.com/omarrezk" target="_blank" rel="noreferrer" aria-label="Kaggle" className="grid size-11 place-items-center rounded-full border border-border bg-card text-sm font-black text-muted-foreground transition hover:-translate-y-1 hover:border-primary/35 hover:text-primary">K</a>
