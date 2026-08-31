@@ -40,6 +40,17 @@ jobs:
           GITHUB_PAGES: "true"
         run: npm run build
 
+      - name: Materialize directory index pages
+        shell: bash
+        run: |
+          find out -type f -name '*.html' ! -name 'index.html' ! -name '404.html' -print0 |
+            while IFS= read -r -d '' page; do
+              route_dir="${page%.html}"
+              if [ -d "$route_dir" ]; then
+                cp --remove-destination "$page" "$route_dir/index.html"
+              fi
+            done
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
