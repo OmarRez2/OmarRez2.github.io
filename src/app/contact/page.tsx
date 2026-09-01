@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Code2, Link2, Mail, MapPin, Phone } from "lucide-react";
+import { Camera, Code2, Link2, Mail, MapPin, Phone } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 import { CopyEmailButton } from "@/components/copy-email-button";
 import { PageHero } from "@/components/page-hero";
@@ -60,6 +60,8 @@ export default function ContactPage() {
               <a href="https://www.linkedin.com/in/omar-rezk-70868b211/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="grid size-11 place-items-center rounded-full border border-border bg-card text-muted-foreground transition hover:-translate-y-1 hover:border-primary/35 hover:text-primary"><Link2 className="size-5" /></a>
               <a href="https://github.com/OmarRez2" target="_blank" rel="noreferrer" aria-label="GitHub" className="grid size-11 place-items-center rounded-full border border-border bg-card text-muted-foreground transition hover:-translate-y-1 hover:border-primary/35 hover:text-primary"><Code2 className="size-5" /></a>
               <a href="https://www.kaggle.com/omarrezk" target="_blank" rel="noreferrer" aria-label="Kaggle" className="grid size-11 place-items-center rounded-full border border-border bg-card text-sm font-black text-muted-foreground transition hover:-translate-y-1 hover:border-primary/35 hover:text-primary">K</a>
+              <a href="https://www.facebook.com/profile.php?id=100007444755586" target="_blank" rel="noreferrer" aria-label="Facebook" className="grid size-11 place-items-center rounded-full border border-border bg-card text-lg font-black text-muted-foreground transition hover:-translate-y-1 hover:border-primary/35 hover:text-primary">f</a>
+              <a href="https://www.instagram.com/3omar_rez2/" target="_blank" rel="noreferrer" aria-label="Instagram" className="grid size-11 place-items-center rounded-full border border-border bg-card text-muted-foreground transition hover:-translate-y-1 hover:border-primary/35 hover:text-primary"><Camera className="size-5" /></a>
             </div>
           </Reveal>
           <Reveal delay={0.08}><ContactForm /></Reveal>

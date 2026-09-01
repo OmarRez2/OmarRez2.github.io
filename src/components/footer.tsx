@@ -2,10 +2,11 @@ import Link from "next/link";
 import { Camera, Code2, Link2, Mail } from "lucide-react";
 
 const socialLinks = [
-  { href: "https://www.linkedin.com/in/omar-rezk-70868b211/", label: "LinkedIn", icon: Link2 },
-  { href: "https://github.com/OmarRez2", label: "GitHub", icon: Code2 },
-  { href: "https://www.kaggle.com/omarrezk", label: "Kaggle", icon: null },
-  { href: "https://www.instagram.com/3omar_rez2/", label: "Instagram", icon: Camera },
+  { href: "https://www.linkedin.com/in/omar-rezk-70868b211/", label: "LinkedIn", icon: Link2, monogram: null },
+  { href: "https://github.com/OmarRez2", label: "GitHub", icon: Code2, monogram: null },
+  { href: "https://www.kaggle.com/omarrezk", label: "Kaggle", icon: null, monogram: "K" },
+  { href: "https://www.facebook.com/profile.php?id=100007444755586", label: "Facebook", icon: null, monogram: "f" },
+  { href: "https://www.instagram.com/3omar_rez2/", label: "Instagram", icon: Camera, monogram: null },
 ];
 
 export function Footer() {
@@ -28,7 +29,7 @@ export function Footer() {
           </div>
           <div className="lg:text-right">
             <div className="flex flex-wrap gap-2 lg:justify-end">
-              {socialLinks.map(({ href, label, icon: Icon }) => (
+              {socialLinks.map(({ href, label, icon: Icon, monogram }) => (
                 <a
                   key={label}
                   href={href}
@@ -36,7 +37,7 @@ export function Footer() {
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border border-border bg-background/70 px-4 py-2 text-sm text-muted-foreground transition hover:-translate-y-0.5 hover:border-primary/40 hover:text-foreground"
                 >
-                  {Icon ? <Icon className="size-4" /> : <span className="font-black">K</span>}
+                  {Icon ? <Icon className="size-4" /> : <span className="font-black">{monogram}</span>}
                   {label}
                 </a>
               ))}

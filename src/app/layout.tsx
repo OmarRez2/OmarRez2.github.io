@@ -60,6 +60,8 @@ const personJsonLd = {
     "https://www.linkedin.com/in/omar-rezk-70868b211/",
     "https://github.com/OmarRez2",
     "https://www.kaggle.com/omarrezk",
+    "https://www.facebook.com/profile.php?id=100007444755586",
+    "https://www.instagram.com/3omar_rez2/",
   ],
   knowsAbout: ["Data Analysis", "Business Intelligence", "Power BI", "SQL", "Python", "DAX", "Data Modeling"],
 };
