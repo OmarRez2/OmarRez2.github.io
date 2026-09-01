@@ -262,6 +262,14 @@ export const certificates: Certificate[] = [
     image: "/images/certificates/iti-python-web-development.jpg",
   },
   {
+    title: "UI/UX (Front-End) Developer Track",
+    issuer: "Information Technology Institute - Tech-Leaps",
+    date: "August - October 2022",
+    detail: "Online front-end development track focused on user interface implementation and practical web experiences.",
+    type: "Training",
+    image: "/images/certificates/iti-ui-ux-front-end.jpg",
+  },
+  {
     title: "Data Analysis Track",
     issuer: "IEEE Egypt - VEP",
     date: "2023",
@@ -276,6 +284,14 @@ export const certificates: Certificate[] = [
     detail: "Recognition for evaluating young innovators and providing structured technical feedback.",
     type: "Recognition",
     image: "/images/certificates/codeavour-judge.jpg",
+  },
+  {
+    title: "Digital Cubs of Egypt Trainer Recognition",
+    issuer: "Almentor",
+    date: "September 2024",
+    detail: "Certificate of appreciation for supporting learners as a trainer in the Digital Cubs of Egypt Initiative.",
+    type: "Recognition",
+    image: "/images/certificates/almentor-digital-cubs-trainer.jpg",
   },
 ];
 

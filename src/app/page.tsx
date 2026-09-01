@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 const impact = [
-  { value: 2, suffix: "+", label: "Years in data & AI" },
+  { value: 3, suffix: "+", label: "Years in data & AI" },
   { value: 190, suffix: "K+", label: "Records analyzed" },
   { value: 100, suffix: "+", label: "Learners mentored" },
   { value: 4, suffix: "", label: "Complete BI case studies" },

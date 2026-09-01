@@ -21,6 +21,8 @@ export const metadata: Metadata = {
 
 export default function CertificatesPage() {
   const currentTrack = certificates.find((certificate) => certificate.date.toLowerCase().includes("progress"));
+  const completedCredentials = certificates.filter((certificate) => certificate.image);
+  const partnerCount = new Set(completedCredentials.map((certificate) => certificate.issuer.split(" - ")[0])).size;
   const technicalCredentials = certificates.filter((certificate) => certificate.type !== "Recognition" && certificate.image);
   const recognition = certificates.filter((certificate) => certificate.type === "Recognition");
 
@@ -33,6 +35,19 @@ export default function CertificatesPage() {
       />
       <section className="section-pad">
         <div className="container-shell">
+          <Reveal className="mb-8 grid overflow-hidden rounded-[1.75rem] border border-border/70 bg-card/70 sm:grid-cols-3">
+            {[
+              { value: completedCredentials.length, label: "Completed credentials" },
+              { value: partnerCount, label: "Training partners" },
+              { value: currentTrack ? 1 : 0, label: "Active professional track" },
+            ].map((item, index) => (
+              <div key={item.label} className={`p-5 sm:p-6 ${index ? "border-t border-border/70 sm:border-l sm:border-t-0" : ""}`}>
+                <p className="text-3xl font-semibold tracking-[-0.05em] text-foreground">{item.value}</p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-[0.13em] text-muted-foreground">{item.label}</p>
+              </div>
+            ))}
+          </Reveal>
+
           {currentTrack ? (
             <Reveal className="relative mb-16 overflow-hidden rounded-[2rem] border border-emerald-500/20 bg-gradient-to-br from-emerald-500/10 via-card to-primary/7 p-6 sm:p-8">
               <div className="absolute -right-10 -top-16 size-48 rounded-full bg-emerald-400/10 blur-3xl" />

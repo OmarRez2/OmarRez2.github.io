@@ -36,10 +36,18 @@ export function CertificateGallery({ certificates }: { certificates: Certificate
                   <span className="relative block aspect-[16/10] w-full overflow-hidden">
                     <Image
                       src={certificate.image}
+                      alt=""
+                      fill
+                      aria-hidden="true"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="scale-110 object-cover opacity-15 blur-2xl transition duration-700 group-hover:scale-115 dark:opacity-20"
+                    />
+                    <Image
+                      src={certificate.image}
                       alt={`${certificate.title} certificate issued by ${certificate.issuer}`}
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-contain p-3 transition duration-500 ease-out group-hover:scale-[1.025] sm:p-4"
+                      className="object-contain p-2 drop-shadow-xl transition duration-500 ease-out group-hover:scale-[1.025] sm:p-3"
                     />
                     <span className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-gradient-to-t from-slate-950/75 via-slate-950/20 to-transparent p-4 pt-16 text-white opacity-100 transition sm:p-5">
                       <span className="text-xs font-semibold uppercase tracking-[0.15em]">View certificate</span>
