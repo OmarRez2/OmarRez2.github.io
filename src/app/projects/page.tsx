@@ -18,8 +18,11 @@ export const metadata: Metadata = {
 };
 
 const kaggleProjects = [
-  { title: "Cardiovascular Disease Data Analysis", tag: "Python · EDA", href: "https://www.kaggle.com/omarrezk" },
-  { title: "Tesla Stock EDA & Prediction", tag: "Python · Machine Learning", href: "https://www.kaggle.com/omarrezk" },
+  {
+    title: "Tesla Stock EDA & Prediction",
+    tag: "Python · Machine Learning",
+    href: "https://www.kaggle.com/code/omarrezk/tesla-stock-eda-prediction",
+  },
 ];
 
 const professionalProfiles = [

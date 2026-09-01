@@ -1,10 +1,14 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { AnimatedBackground } from "@/components/animated-background";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { PageTransition } from "@/components/page-transition";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
+
+const configuredGaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() ?? "";
+const gaMeasurementId = /^G-[A-Z0-9]+$/i.test(configuredGaId) ? configuredGaId.toUpperCase() : null;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://omarrez2.github.io"),
@@ -92,6 +96,22 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           </main>
           <div className="relative z-10"><Footer /></div>
         </ThemeProvider>
+        {gaMeasurementId ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', ${JSON.stringify(gaMeasurementId)});
+              `}
+            </Script>
+          </>
+        ) : null}
       </body>
     </html>
   );

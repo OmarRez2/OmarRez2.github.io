@@ -28,14 +28,14 @@ export function Footer() {
             </a>
           </div>
           <div className="lg:text-right">
-            <div className="flex flex-wrap gap-2 lg:justify-end">
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
               {socialLinks.map(({ href, label, icon: Icon, monogram }) => (
                 <a
                   key={label}
                   href={href}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-border bg-background/70 px-4 py-2 text-sm text-muted-foreground transition hover:-translate-y-0.5 hover:border-primary/40 hover:text-foreground"
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-border bg-background/70 px-3 py-2 text-sm text-muted-foreground transition hover:-translate-y-0.5 hover:border-primary/40 hover:text-foreground"
                 >
                   {Icon ? <Icon className="size-4" /> : <span className="font-black">{monogram}</span>}
                   {label}
