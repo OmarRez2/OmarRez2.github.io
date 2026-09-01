@@ -254,6 +254,14 @@ export const certificates: Certificate[] = [
     image: "/images/certificates/samsung-ai.jpg",
   },
   {
+    title: "HCIA-AI Learning Course",
+    issuer: "Huawei ICT Academy - ICT Talent Bank",
+    date: "Completed",
+    detail: "Huawei artificial intelligence learning course delivered with ICT Talent Bank and the Ministry of Youth and Sports.",
+    type: "Training",
+    image: "/images/certificates/huawei-hcia-ai.jpeg",
+  },
+  {
     title: "Web Development Using Python",
     issuer: "Information Technology Institute",
     date: "September - October 2022",
