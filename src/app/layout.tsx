@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { PageTransition } from "@/components/page-transition";
 import { ThemeProvider } from "@/components/theme-provider";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 import "./globals.css";
 
 const configuredGaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() ?? "";
@@ -95,6 +96,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <PageTransition>{children}</PageTransition>
           </main>
           <div className="relative z-10"><Footer /></div>
+          <WhatsAppButton />
         </ThemeProvider>
         {gaMeasurementId ? (
           <>

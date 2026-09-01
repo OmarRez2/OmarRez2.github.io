@@ -23,6 +23,11 @@ const kaggleProjects = [
     tag: "Python · Machine Learning",
     href: "https://www.kaggle.com/code/omarrezk/tesla-stock-eda-prediction",
   },
+  {
+    title: "Cardiovascular Disease Analysis",
+    tag: "Python · Machine Learning",
+    href: "https://www.kaggle.com/code/ahmadbarkat/cardiovascular-disease",
+  },
 ];
 
 const professionalProfiles = [
