@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Contact Omar Rezk | Data Analyst & Power BI Developer",
     description: "Contact Omar Rezk for Data Analyst, BI Analyst, Power BI, and analytics opportunities.",
     url: "/contact",
-    images: [{ url: "/images/omar-hero.webp", width: 1775, height: 887, alt: "Omar Rezk" }],
+    images: [{ url: "/images/omar-social-suit-v2.jpg", width: 1254, height: 1254, type: "image/jpeg", alt: "Omar Rezk — Data Analyst and Power BI Developer" }],
   },
 };
 

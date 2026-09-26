@@ -39,11 +39,10 @@ export function ContactForm() {
         Message
         <Textarea name="message" required placeholder="Tell me about the role, project, or data challenge." className="min-h-40 rounded-xl bg-background" />
       </label>
-      <Button type="submit" className="mt-6 h-12 w-full rounded-xl bg-gradient-to-r from-cyan-500 via-blue-600 to-violet-600 text-white shadow-lg shadow-blue-500/20 hover:opacity-90 sm:w-auto sm:px-7">
+      <Button type="submit" className="mt-6 h-12 w-full rounded-xl bg-primary text-primary-foreground shadow-lg shadow-primary/15 hover:opacity-90 sm:w-auto sm:px-7">
         Send message <Send className="size-4" />
       </Button>
       {sent ? <p className="mt-4 text-sm text-muted-foreground">Your email app should open with the message ready to send.</p> : null}
     </form>
   );
 }
-

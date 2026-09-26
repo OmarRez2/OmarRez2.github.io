@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "About Omar Rezk | Data Analyst & Power BI Developer",
     description: "Experience, skills, education, and professional profile of data analyst Omar Rezk.",
     url: "/about",
-    images: [{ url: "/images/omar-hero.webp", width: 1775, height: 887, alt: "Omar Rezk" }],
+    images: [{ url: "/images/omar-social-suit-v2.jpg", width: 1254, height: 1254, type: "image/jpeg", alt: "Omar Rezk — Data Analyst and Power BI Developer" }],
   },
 };
 
@@ -34,12 +34,12 @@ export default function AboutPage() {
         <div className="container-shell grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
           <Reveal className="relative">
             <Parallax distance={18} className="relative">
-              <div className="absolute -inset-4 -z-10 rounded-[2.5rem] bg-gradient-to-br from-cyan-500/12 to-violet-500/14 blur-2xl" />
-              <div className="motion-shine relative aspect-square overflow-hidden rounded-[2rem] border border-border/60 bg-slate-950">
-                <Image src="/images/omar-profile.webp" alt="Professional portrait of Omar Rezk" fill sizes="(max-width: 1024px) 100vw, 45vw" className="object-cover object-center transition-transform duration-700 hover:scale-[1.025]" />
+              <div className="absolute -inset-4 -z-10 rounded-[2.5rem] bg-primary/10 blur-2xl" />
+              <div className="relative aspect-square overflow-hidden rounded-[2rem] border border-border/60 bg-slate-950">
+                <Image src="/images/omar-portrait-suit-v2.webp" alt="Professional portrait of Omar Rezk" fill sizes="(max-width: 1024px) 100vw, 45vw" className="object-cover object-center" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-transparent to-transparent" />
                 <div className="absolute inset-x-6 bottom-6 rounded-2xl border border-white/10 bg-slate-950/65 p-5 text-white backdrop-blur-xl">
-                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">Working philosophy</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/80">Working philosophy</p>
                   <p className="mt-2 text-lg font-semibold">Clarity is a feature, not decoration.</p>
                 </div>
               </div>
@@ -90,14 +90,18 @@ export default function AboutPage() {
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                   <div>
                     <h3 className="text-xl font-semibold tracking-[-0.025em]">{item.role}</h3>
-                    <p className="mt-1 font-semibold text-primary">{item.company}</p>
+                    <p className="mt-1 font-semibold text-primary">
+                      {item.companyUrl ? (
+                        <a href={item.companyUrl} target="_blank" rel="noopener noreferrer" className="underline-offset-4 hover:underline focus-visible:underline">{item.company}</a>
+                      ) : item.company}
+                    </p>
                   </div>
                   <div className="sm:text-right">
                     <p className="text-sm font-semibold">{item.period}</p>
-                    <p className="mt-1 text-xs text-muted-foreground">{item.location}</p>
+                    {item.location && <p className="mt-1 text-xs text-muted-foreground">{item.location}</p>}
                   </div>
                 </div>
-                <p className="mt-5 max-w-3xl text-sm leading-7 text-muted-foreground">{item.summary}</p>
+                {item.summary && <p className="mt-5 max-w-3xl text-sm leading-7 text-muted-foreground">{item.summary}</p>}
               </Reveal>
             ))}
           </div>

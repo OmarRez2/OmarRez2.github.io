@@ -17,6 +17,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { ThemeCustomizer } from "@/components/theme-customizer";
 
 const links = [
   { href: "/", label: "Home" },
@@ -46,10 +47,10 @@ export function Navbar() {
         compact ? "border-border/70 bg-background/90 shadow-lg shadow-slate-950/5" : "border-border/45 bg-background/70",
       )}
     >
-      <motion.div className="absolute inset-x-0 bottom-0 h-px origin-left bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-500" style={{ scaleX: smoothProgress }} />
+      <motion.div className="absolute inset-x-0 bottom-0 h-px origin-left bg-primary" style={{ scaleX: smoothProgress }} />
       <div className={cn("container-shell flex items-center justify-between transition-[height] duration-300", compact ? "h-16" : "h-18")}>
         <Link href="/" className="group flex items-center gap-3" aria-label="Omar Rezk home">
-          <span className="grid size-10 place-items-center rounded-xl bg-gradient-to-br from-cyan-400 via-blue-500 to-violet-600 font-bold text-white shadow-lg shadow-blue-500/20 transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-105">
+          <span className="grid size-10 place-items-center rounded-xl bg-primary font-bold text-primary-foreground shadow-sm">
             OR
           </span>
           <span className="hidden leading-tight sm:block">
@@ -70,7 +71,7 @@ export function Navbar() {
             >
               {link.label}
               {isActive(pathname, link.href) ? (
-                <motion.span layoutId="active-nav" className={cn("absolute inset-x-4 h-0.5 rounded-full bg-gradient-to-r from-cyan-400 to-violet-500", compact ? "-bottom-[11px]" : "-bottom-[13px]")} />
+                <motion.span layoutId="active-nav" className={cn("absolute inset-x-4 h-0.5 rounded-full bg-primary", compact ? "-bottom-[11px]" : "-bottom-[13px]")} />
               ) : null}
             </Link>
           ))}
@@ -78,6 +79,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
+          <ThemeCustomizer />
           <Button
             render={<Link href="/contact" />}
             className="hidden h-10 rounded-full bg-foreground px-5 text-background hover:bg-foreground/85 sm:inline-flex"

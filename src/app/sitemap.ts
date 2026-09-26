@@ -7,8 +7,8 @@ export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const corePages: MetadataRoute.Sitemap = [
-    { url: siteUrl, changeFrequency: "monthly", priority: 1, images: [`${siteUrl}/images/omar-hero.webp`] },
-    { url: `${siteUrl}/about`, changeFrequency: "yearly", priority: 0.8, images: [`${siteUrl}/images/omar-profile.webp`] },
+    { url: siteUrl, changeFrequency: "monthly", priority: 1, images: [`${siteUrl}/images/omar-portrait-suit-v2.webp`] },
+    { url: `${siteUrl}/about`, changeFrequency: "yearly", priority: 0.8, images: [`${siteUrl}/images/omar-portrait-suit-v2.webp`] },
     { url: `${siteUrl}/projects`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteUrl}/certificates`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${siteUrl}/contact`, changeFrequency: "yearly", priority: 0.7 },

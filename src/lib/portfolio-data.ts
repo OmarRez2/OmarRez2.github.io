@@ -11,6 +11,7 @@ export type Project = {
   featured: boolean;
   tech: string[];
   stats: { value: string; label: string }[];
+  statsNote?: string;
   decision: string;
   challenge: string;
   approach: string[];
@@ -19,6 +20,52 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    slug: "finsight-finance-analysis",
+    title: "FinSight — Finance Analysis",
+    eyebrow: "Financial transaction analytics",
+    description:
+      "A three-page Power BI report exploring transactions and customer segments, supported by a reproducible Python analysis and SQLite KPI views.",
+    overview:
+      "FinSight brings transaction activity, customer segments, locations, and payment statuses into one analytical view. The Power BI report includes Landing, Overview Analysis, and Transactions pages. A separate Jupyter workflow documents data cleaning, quality checks, and reusable SQL calculations across January 2023 to April 2026.",
+    image: "/images/projects/finsight-overview.webp",
+    gallery: [
+      "/images/projects/finsight-overview.webp",
+      "/images/projects/finsight-landing.webp",
+      "/images/projects/finsight-transactions.webp",
+    ],
+    github: "https://github.com/OmarRez2/Power-BI-Finance-Analysis",
+    year: "2026",
+    featured: false,
+    tech: ["Power BI", "DAX", "Power Query", "Python", "SQL", "SQLite", "Jupyter"],
+    stats: [
+      { value: "50,000", label: "Unique transactions" },
+      { value: "5,000", label: "Customers in source data" },
+      { value: "INR 455.39M", label: "Signed transaction volume" },
+      { value: "85.74%", label: "Successful transactions" },
+    ],
+    statsNote:
+      "KPIs are from the notebook-cleaned dataset for January 2023–April 2026, across all transaction statuses. Transaction volume is not bank revenue. Power BI screenshots use a separate cleaning policy: absolute amounts and imputed missing fees; the notebook preserves signed amounts and unknown fees, so totals differ.",
+    decision:
+      "Help teams explore transaction activity by customer segment, location, and status while keeping data-quality limitations visible.",
+    challenge:
+      "Duplicate records, missing fees, negative amounts, and transactions dated before customer registration required explicit cleaning decisions before interpreting financial activity.",
+    approach: [
+      "Modeled customers, transactions, and a calendar in Power BI, with DAX KPIs and interactive filters for transaction exploration.",
+      "Built a separate Python notebook to parse dates, review duplicate transaction IDs, and audit missing fees, negative values, and customer relationships.",
+      "Created SQLite views for KPI summaries, monthly trends, statuses, segments, locations, transaction types, and quality checks.",
+    ],
+    outcomes: [
+      "Established a notebook baseline of 50,000 unique transactions after reviewed deduplication.",
+      "Measured 42,869 successful transactions, representing 85.74% of the cleaned transaction count.",
+      "Flagged 9,333 transactions dated before customer registration for business review, while preserving 8 negative amounts and 23 missing fees.",
+    ],
+    recommendations: [
+      "Agree on a consistent policy for negative amounts and unknown fees before comparing Power BI totals with notebook results.",
+      "Compare equivalent month windows across years because the dataset ends in April 2026.",
+      "Review registration-date exceptions with the data owner and investigate unsuccessful transactions by segment and channel; treat recorded fraud flags as signals requiring validation.",
+    ],
+  },
   {
     slug: "sales-intelligence-hub",
     title: "Sales Intelligence Hub",
@@ -186,6 +233,15 @@ export const projects: Project[] = [
 ];
 
 export const experiences = [
+  {
+    role: "Marketing Data Analyst",
+    company: "Al Farouk Educational Services",
+    companyUrl: "https://www.linkedin.com/company/al-faroukedu/",
+    period: "Sep 2026 - Present",
+    location: "",
+    summary:
+      "Analyze marketing performance for educational course launches, tracking click-through rate (CTR) and related campaign KPIs. Query and prepare marketing data, apply statistical analysis, and translate findings into insights and recommendations for the marketing team.",
+  },
   {
     role: "Data Analysis Instructor",
     company: "eYouth",

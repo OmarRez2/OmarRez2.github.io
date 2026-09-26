@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { ProjectImage } from "@/components/project-image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Code2, Layers3, Lightbulb, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Parallax } from "@/components/parallax";
 import { Reveal } from "@/components/reveal";
 import { projects } from "@/lib/portfolio-data";
 
@@ -75,7 +74,7 @@ export default async function ProjectDetailsPage({ params }: ProjectPageProps) {
             <div className="mt-10 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-4xl">
                 <p className="eyebrow">{project.eyebrow}</p>
-                <h1 className="mt-5 text-balance text-5xl font-semibold tracking-[-0.055em] sm:text-6xl lg:text-7xl">{project.title}</h1>
+                <h1 className="mt-5 text-balance text-4xl font-semibold leading-[1.1] tracking-[-0.04em] sm:text-5xl lg:text-6xl">{project.title}</h1>
                 <p className="mt-6 max-w-3xl text-pretty text-lg leading-8 text-muted-foreground">{project.description}</p>
               </div>
               <Button render={<a href={project.github} target="_blank" rel="noreferrer" />} size="lg" className="h-12 w-fit shrink-0 rounded-full">
@@ -92,11 +91,9 @@ export default async function ProjectDetailsPage({ params }: ProjectPageProps) {
       <section className="pt-10 sm:pt-14">
         <div className="container-shell">
           <Reveal>
-            <Parallax distance={18} className="overflow-hidden rounded-[1.4rem] border border-border/70 bg-card p-2 shadow-2xl shadow-primary/10 sm:rounded-[2rem] sm:p-3">
-              <div className="relative aspect-[16/9] overflow-hidden rounded-[1rem] bg-muted sm:rounded-[1.4rem]">
-                <Image src={project.image} alt={`${project.title} dashboard`} fill priority sizes="100vw" className="object-cover object-top transition-transform duration-700 hover:scale-[1.018]" />
-              </div>
-            </Parallax>
+            <div className="overflow-hidden rounded-3xl border border-border/70 bg-card p-2 sm:p-3">
+              <ProjectImage src={project.image} alt={`${project.title} dashboard`} priority />
+            </div>
           </Reveal>
           <div className="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-4">
             {project.stats.map((stat, statIndex) => (
@@ -106,6 +103,9 @@ export default async function ProjectDetailsPage({ params }: ProjectPageProps) {
               </Reveal>
             ))}
           </div>
+          {project.statsNote && (
+            <p className="mt-4 max-w-5xl text-sm leading-7 text-muted-foreground">{project.statsNote}</p>
+          )}
           <Reveal className="mt-5 flex flex-col gap-4 rounded-3xl border border-primary/18 bg-primary/7 p-6 sm:flex-row sm:items-start sm:p-7">
             <span className="grid size-11 shrink-0 place-items-center rounded-2xl bg-primary text-primary-foreground shadow-lg shadow-primary/20">
               <Target className="size-5" />
@@ -169,7 +169,7 @@ export default async function ProjectDetailsPage({ params }: ProjectPageProps) {
       <section className="section-pad">
         <div className="container-shell grid gap-12 lg:grid-cols-[0.68fr_1.32fr] lg:gap-20">
           <Reveal>
-            <span className="grid size-12 place-items-center rounded-2xl bg-gradient-to-br from-cyan-400/15 via-blue-500/15 to-violet-500/15 text-primary">
+            <span className="grid size-12 place-items-center rounded-2xl bg-primary/10 text-primary">
               <Lightbulb className="size-6" />
             </span>
             <p className="mt-6 eyebrow">Recommendations</p>
@@ -199,9 +199,7 @@ export default async function ProjectDetailsPage({ params }: ProjectPageProps) {
             <div className="mt-10 grid gap-5">
               {project.gallery.slice(1).map((image, imageIndex) => (
                 <Reveal key={image} delay={imageIndex * 0.05} className="overflow-hidden rounded-3xl border border-border/70 bg-card p-2 shadow-xl shadow-primary/5">
-                  <div className="relative aspect-[16/9] overflow-hidden rounded-[1.1rem] bg-muted">
-                    <Image src={image} alt={`${project.title} dashboard view ${imageIndex + 2}`} fill sizes="100vw" className="object-cover object-top" />
-                  </div>
+                  <ProjectImage src={image} alt={`${project.title} dashboard view ${imageIndex + 2}`} />
                 </Reveal>
               ))}
             </div>
@@ -219,7 +217,7 @@ export default async function ProjectDetailsPage({ params }: ProjectPageProps) {
           </Reveal>
           <Reveal delay={0.05} className="flex rounded-[2rem] bg-slate-950 p-7 text-white sm:p-10 lg:w-80 lg:flex-col lg:justify-between">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">Source files</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/70">Source files</p>
               <h2 className="mt-4 text-2xl font-semibold tracking-[-0.03em]">Explore the full repository.</h2>
             </div>
             <a href={project.github} target="_blank" rel="noreferrer" className="ml-auto grid size-12 shrink-0 place-items-center self-end rounded-full bg-white text-slate-950 transition hover:rotate-6 lg:ml-0 lg:mt-8 lg:self-start" aria-label={`Open ${project.title} repository`}><ArrowUpRight className="size-5" /></a>

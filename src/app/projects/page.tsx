@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: "Projects",
   description: "Power BI, SQL, Python, and business intelligence case studies by Omar Rezk.",
   alternates: { canonical: "/projects" },
+  twitter: {
+    card: "summary_large_image",
+    title: "Analytics Projects & Case Studies | Omar Rezk",
+    description: "Power BI, SQL, Python, and business intelligence case studies by Omar Rezk.",
+    images: ["/images/projects/sales-overview.webp"],
+  },
   openGraph: {
     title: "Analytics Projects & Case Studies | Omar Rezk",
     description: "Power BI, SQL, Python, and business intelligence case studies by Omar Rezk.",

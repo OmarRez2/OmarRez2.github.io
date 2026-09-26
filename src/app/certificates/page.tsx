@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Certificates & Professional Training | Omar Rezk",
     description: "Professional training, certifications, and recognition earned by Omar Rezk.",
     url: "/certificates",
-    images: [{ url: "/images/omar-hero.webp", width: 1775, height: 887, alt: "Omar Rezk" }],
+    images: [{ url: "/images/omar-social-suit-v2.jpg", width: 1254, height: 1254, type: "image/jpeg", alt: "Omar Rezk — Data Analyst and Power BI Developer" }],
   },
 };
 

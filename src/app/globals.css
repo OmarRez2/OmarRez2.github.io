@@ -84,6 +84,10 @@
   }
   ::selection { background: color-mix(in oklch, var(--primary) 30%, transparent); }
   a, button, input, textarea { -webkit-tap-highlight-color: transparent; }
+  :where(a, button, input, textarea, summary):focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 4px;
+  }
 }
 
 @layer components {
@@ -109,7 +113,7 @@
     background: currentColor;
   }
   .text-gradient {
-    background: linear-gradient(115deg, #56d9ff 5%, #4f8dff 45%, #a679ff 92%);
+    background: linear-gradient(115deg, var(--primary), color-mix(in srgb, var(--primary) 72%, var(--foreground)));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -136,7 +140,7 @@
     background-position: 0 0, 0 0, 0 0, 0 0;
     background-size: 72px 72px, 72px 72px, 288px 288px, 360px 360px;
     mask-image: radial-gradient(ellipse at center, black 0%, transparent 76%);
-    animation: ambient-grid-drift 28s linear infinite;
+    animation: none;
   }
   .motion-shine {
     position: relative;
@@ -153,7 +157,7 @@
     pointer-events: none;
   }
   .motion-shine:hover::after { left: 125%; }
-  .section-pad { padding-block: clamp(5rem, 9vw, 8rem); }
+  .section-pad { padding-block: clamp(3.5rem, 6vw, 5.5rem); }
   .skip-link {
     position: fixed;
     top: 0.75rem;

@@ -37,13 +37,13 @@ export const metadata: Metadata = {
     siteName: "Omar Rezk Portfolio",
     title: "Omar Rezk | Data Analyst & Power BI Developer",
     description: "Power BI dashboards, analytics case studies, SQL, and Python projects.",
-    images: [{ url: "/images/omar-hero.webp", width: 1775, height: 887, alt: "Omar Rezk" }],
+    images: [{ url: "/images/omar-social-suit-v2.jpg", width: 1254, height: 1254, type: "image/jpeg", alt: "Omar Rezk — Data Analyst and Power BI Developer" }],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Omar Rezk | Data Analyst & Power BI Developer",
     description: "Power BI dashboards, analytics case studies, SQL, and Python projects.",
-    images: ["/images/omar-hero.webp"],
+    images: ["/images/omar-social-suit-v2.jpg"],
   },
 };
 
@@ -53,7 +53,7 @@ const personJsonLd = {
   name: "Omar Mahmoud Sophy Rezk",
   alternateName: "Omar Rezk",
   url: "https://omarrez2.github.io",
-  image: "https://omarrez2.github.io/images/omar-profile.webp",
+  image: "https://omarrez2.github.io/images/omar-portrait-suit-v2.webp",
   jobTitle: "Data Analyst and Power BI Developer",
   email: "mailto:orezk337@gmail.com",
   address: {
