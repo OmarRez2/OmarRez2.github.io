@@ -64,6 +64,7 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
+              aria-current={isActive(pathname, link.href) ? "page" : undefined}
               className={cn(
                 "relative rounded-full px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground",
                 isActive(pathname, link.href) && "text-foreground",
@@ -107,7 +108,7 @@ export function Navbar() {
               </SheetHeader>
               <nav className="flex flex-col p-4" aria-label="Mobile navigation">
                 {links.map((link) => (
-                  <SheetClose key={link.href} render={<Link href={link.href} />}>
+                  <SheetClose key={link.href} render={<Link href={link.href} aria-current={isActive(pathname, link.href) ? "page" : undefined} />}>
                     <span
                       className={cn(
                         "flex items-center justify-between rounded-2xl px-4 py-4 text-base font-medium text-muted-foreground transition hover:bg-muted hover:text-foreground",
@@ -124,6 +125,11 @@ export function Navbar() {
           </Sheet>
         </div>
       </div>
+      <noscript>
+        <nav aria-label="Navigation without JavaScript" className="flex flex-wrap justify-center gap-4 bg-background p-3 text-sm lg:hidden">
+          {links.map(link => <a key={link.href} href={link.href}>{link.label}</a>)}
+        </nav>
+      </noscript>
     </motion.header>
   );
 }

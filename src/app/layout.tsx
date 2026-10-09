@@ -96,7 +96,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <PageTransition>{children}</PageTransition>
           </main>
           <div className="relative z-10"><Footer /></div>
-          <WhatsAppButton />
+          <aside aria-label="Quick contact"><WhatsAppButton /></aside>
         </ThemeProvider>
         {gaMeasurementId ? (
           <>

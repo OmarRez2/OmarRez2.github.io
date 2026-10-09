@@ -31,7 +31,7 @@ const kaggleProjects = [
   },
   {
     title: "Cardiovascular Disease Analysis",
-    tag: "Python · Machine Learning",
+    tag: "External notebook · ahmadbarkat",
     href: "https://www.kaggle.com/code/ahmadbarkat/cardiovascular-disease",
   },
 ];
@@ -47,7 +47,7 @@ const professionalProfiles = [
   {
     title: "Kaggle",
     description: "Exploratory data analysis, machine learning notebooks, and practical data science work.",
-    stat: `${kaggleProjects.length} featured notebooks`,
+    stat: "Notebooks and analysis",
     href: "https://www.kaggle.com/omarrezk",
     icon: BarChart3,
   },
@@ -62,6 +62,7 @@ export default function ProjectsPage() {
         description="Explore end-to-end projects across sales, mobility, financial risk, and retail—with real KPIs, reproducible analysis, and interactive Power BI experiences."
       />
       <section className="section-pad">
+        <h2 className="sr-only">Portfolio projects</h2>
         <div className="container-shell">
           <ProjectsGrid projects={projects} />
         </div>
@@ -95,7 +96,7 @@ export default function ProjectsPage() {
           </Reveal>
 
           <Reveal>
-            <p className="eyebrow mt-16">Data science notebooks</p>
+            <h2 className="eyebrow mt-16">Data science notebooks & references</h2>
             <div className="mt-8 grid gap-4 md:grid-cols-2">
               {kaggleProjects.map((project) => (
                 <a

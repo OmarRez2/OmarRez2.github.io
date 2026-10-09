@@ -80,7 +80,7 @@ export default function Home() {
                   src="/images/omar-portrait-suit-v2.webp"
                   alt="Professional portrait of Omar Rezk"
                   fill
-                  priority
+                  preload
                   sizes="(max-width: 1024px) 100vw, 52vw"
                   className="object-cover object-center"
                 />
@@ -129,7 +129,7 @@ export default function Home() {
           <div className="mt-12 grid gap-6 md:grid-cols-2 md:[&>*:last-child]:col-span-2 xl:grid-cols-3 xl:[&>*:last-child]:col-span-1">
             {featuredProjects.map((project, index) => (
               <Reveal key={project.slug} delay={index * 0.06}>
-                <ProjectCard project={project} priority={index < 3} showStats />
+                <ProjectCard project={project} showStats />
               </Reveal>
             ))}
           </div>

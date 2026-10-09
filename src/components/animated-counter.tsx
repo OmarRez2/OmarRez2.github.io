@@ -17,7 +17,7 @@ export function AnimatedCounter({
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-40px" });
   const reduceMotion = useReducedMotion();
-  const progress = useMotionValue(reduceMotion ? value : 0);
+  const progress = useMotionValue(value);
   const rounded = useTransform(progress, (latest) => `${prefix}${latest.toFixed(decimals)}${suffix}`);
 
   useEffect(() => {
