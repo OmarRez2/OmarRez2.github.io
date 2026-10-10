@@ -1,0 +1,521 @@
+[
+  {
+    "url": "https://www.linkedin.com/company/al-faroukedu/",
+    "status": 200,
+    "final": "https://www.linkedin.com/company/al-faroukedu/",
+    "type": "text/html; charset=utf-8",
+    "bytes": 101907,
+    "title": "Al Farouk | LinkedIn",
+    "headers": {
+      "csp": "default-src 'none'; connect-src 'self' *.licdn.com *.linkedin.com cdn.linkedin.oribi.io dpm.demdex.net/id lnkd.demdex.net blob: accounts.google.com/gsi/ linkedin.sc.omtrdc.net/b/ss/ v.clarity.ms/collect *.microsoft.com *.adnxs.com *.tealiumiq.com login.microsoftonline.com bat.bing.com lnkd.tt.omtrdc.net/rest/v1/delivery www.google.com google.com adservice.google.com pagead2.googlesyndication.com td.doubleclick.net www.googletagmanager.com www.googleadservices.com ad.doubleclick.net googleads.g.doubleclick.net ade.googlesyndication.com *.fls.doubleclick.net; script-src 'report-sample' 'sha256-th47JTnh6tX15SUn/I+GGmsOSXpa7dh5Skner77gxlY=' 'sha256-SSoodjUD3LGm2FfFCVHGqEb8D4UM3OOigidT2UKDcYg=' 'sha256-cKTgdnmO6+hXd85a9wKg1effVfVzenUAtUCyOKY9bQE=' 'sha256-DwtT8+ZZKpxH9pqZNAmJ3GdbLAh5SsYaXR3omTXPCns=' 'sha256-sV9jZa797T0QWBzcU/CNd4tpBhTnh+TFdLnfjlitl28=' 'sha256-aa/Q8CRBDSqTQbCIyioPhZaz+G+dbPyu7BzsjInEmiU=' 'sha256-THuVhwbXPeTR0HszASqMOnIyxqEgvGyBwSPBKBF/iMc=' 'sha256-zTIusdVJJeXz9+iox2a+pdDglzbpRpFVRzEwvW4AONk=' 'sha256-iC8MPqNLw0FDnsBf4DlSkFLNTwhkI85aouiAEB819ic=' 'sha256-2EqrEvcPzl8c6/TSGVvaVMEe7lg700MAz/te4/3kTYY=' 'sha256-y5uW69VItKj51mcc7UD9qfptDVUqicZL+bItEpvVNDw=' 'sha256-DatsFGoJ8gFkzzxo47Ou76WZ+3QBPOQHtBu9p9b3DhA=' 'sha256-k95cyM8gFgPziZe5VQ2IvJvBUVyd5zFt2CokIUwqdHE=' 'sha256-PyCXNcEkzRWqbiNr087fizmiBBrq9O6GGD8eV3P09Ik=' 'sha256-RFqsjmAF1N5LnfpaHFvPqFlVkeIS/DtTAFor+JjJJVc=' 'sha256-2SQ55Erm3CPCb+k03EpNxU9bdV3XL9TnVTriDs7INZ4=' 'sha256-S/KSPe186K/1B0JEjbIXcCdpB97krdzX05S+dHnQjUs=' 'sha256-9pXOIwF4N0gPltLd3AI69lkCjSC2H/Eb3sc5zdmUyYU=' 'sha256-jou6v/Nleyzoc+LXktAv1Fp8M807dVVxy7E/yzVljHc=' 'sha256-6E4e/3dSvj/8JZT2S2yR91mspqM6MyOpKl5lrhHsZa8=' 'sha256-JfJ82reKxtqugVbfRGw/O/1x1Lm1I09rHueXSwvbRws=' 'sha256-BbV1i75oYRtLtfDWs7tnA8QLF5EOO1dVHKL0prVd/fQ=' 'sha256-3woF8BZ54TeXM+czaH3aXoaJsVpiamuAKFsXDykAR/Q=' 'sha256-vIfNcKb8ixJg1cfJIoNNYjWcm0lezj1/XpUNFiZyVsU=' 'sha256-cLsHUHFgT/VGX04cZrJ9xgm4HbzTR7ptutkxK+7BlMk=' 'sha256-BwU8jMnQYUhjOpsDVABpfddV/DlP1ZYrFcTumYw7x54=' 'sha256-wz6ika9i3WU3bpUPdhYDZeO/NrDQniDyiscN0LWnyaY=' 'sha256-3RIGhhApBii1KY+aW1xk7kFyoQY8vSVE5DfT7E9SJUc=' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com platform.linkedin.com platform-akam.linkedin.com platform-ecst.linkedin.com platform-azur.linkedin.com snap.licdn.com www.google.com/recaptcha/enterprise.js www.gstatic.com/recaptcha/releases/ www.googletagmanager.com/gtag/js www.googletagmanager.com/gtag/destination googleads.g.doubleclick.net/pagead/viewthroughconversion/ merchantpool1.linkedin.com/mdt.js; img-src data: blob: * 'self' *.licdn.com android-webview-video-poster:; font-src data: * 'self' *.licdn.com; style-src 'self' 'unsafe-inline' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; media-src 'self' *.licdn.com *.lynda.com; worker-src 'self' blob: static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; frame-src 'self' www.youtube.com/embed/ www.youtube-nocookie.com/embed/ lnkd.demdex.net smartlock.google.com accounts.google.com player.vimeo.com *.linkedin.com www.slideshare.net *.megaphone.fm *.omny.fm *.sounder.fm msit.powerbi.com app.powerbi.com linkedin.github.io *.licdn.com *.adnxs.com acdn.adnxs-simple.com radar.cedexis.com edge-auth.microsoft.com flo.uri.sh play.vidyard.com www.google.com/recaptcha/ aat-acr-web-prod.azurewebsites.net *.fls.doubleclick.net www.googletagmanager.com td.doubleclick.net googleads.g.doubleclick.net li.protechts.net *.xlgmedia.com *.px-cloud.net merchantpool1.linkedin.com; frame-ancestors 'self' *.www.linkedin.com:*; manifest-src 'self'; report-uri https://www.linkedin.com/security/csp?f=gg",
+      "hsts": "max-age=31536000"
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/in/omar-rezk-70868b211/",
+    "status": 999,
+    "final": "https://www.linkedin.com/in/omar-rezk-70868b211",
+    "type": "text/html",
+    "bytes": 1530,
+    "headers": {
+      "csp": "default-src 'none'; connect-src 'self' *.licdn.com *.linkedin.com cdn.linkedin.oribi.io dpm.demdex.net/id lnkd.demdex.net blob: accounts.google.com/gsi/ linkedin.sc.omtrdc.net/b/ss/ *.microsoft.com *.adnxs.com login.microsoftonline.com; script-src 'report-sample' 'sha256-SSoodjUD3LGm2FfFCVHGqEb8D4UM3OOigidT2UKDcYg=' 'sha256-cKTgdnmO6+hXd85a9wKg1effVfVzenUAtUCyOKY9bQE=' 'sha256-DwtT8+ZZKpxH9pqZNAmJ3GdbLAh5SsYaXR3omTXPCns=' 'sha256-sV9jZa797T0QWBzcU/CNd4tpBhTnh+TFdLnfjlitl28=' 'sha256-aa/Q8CRBDSqTQbCIyioPhZaz+G+dbPyu7BzsjInEmiU=' 'sha256-THuVhwbXPeTR0HszASqMOnIyxqEgvGyBwSPBKBF/iMc=' 'sha256-zTIusdVJJeXz9+iox2a+pdDglzbpRpFVRzEwvW4AONk=' 'sha256-iC8MPqNLw0FDnsBf4DlSkFLNTwhkI85aouiAEB819ic=' 'sha256-2EqrEvcPzl8c6/TSGVvaVMEe7lg700MAz/te4/3kTYY=' 'sha256-y5uW69VItKj51mcc7UD9qfptDVUqicZL+bItEpvVNDw=' 'sha256-DatsFGoJ8gFkzzxo47Ou76WZ+3QBPOQHtBu9p9b3DhA=' 'sha256-k95cyM8gFgPziZe5VQ2IvJvBUVyd5zFt2CokIUwqdHE=' 'sha256-PyCXNcEkzRWqbiNr087fizmiBBrq9O6GGD8eV3P09Ik=' 'sha256-RFqsjmAF1N5LnfpaHFvPqFlVkeIS/DtTAFor+JjJJVc=' 'sha256-2SQ55Erm3CPCb+k03EpNxU9bdV3XL9TnVTriDs7INZ4=' 'sha256-S/KSPe186K/1B0JEjbIXcCdpB97krdzX05S+dHnQjUs=' 'sha256-FlukkU82ZNE00G2TrHsH/yPyxOM3w+ZxvfuhvuFPnUw=' 'sha256-2zZW4Jcwd05ccL428yqAJrFBz0W+zZ84jSu9AoKa75Q=' 'sha256-3RIGhhApBii1KY+aW1xk7kFyoQY8vSVE5DfT7E9SJUc=' 'sha256-9pXOIwF4N0gPltLd3AI69lkCjSC2H/Eb3sc5zdmUyYU=' 'sha256-jou6v/Nleyzoc+LXktAv1Fp8M807dVVxy7E/yzVljHc=' 'sha256-6E4e/3dSvj/8JZT2S2yR91mspqM6MyOpKl5lrhHsZa8=' 'sha256-JfJ82reKxtqugVbfRGw/O/1x1Lm1I09rHueXSwvbRws=' 'sha256-BbV1i75oYRtLtfDWs7tnA8QLF5EOO1dVHKL0prVd/fQ=' 'sha256-3woF8BZ54TeXM+czaH3aXoaJsVpiamuAKFsXDykAR/Q=' 'sha256-vIfNcKb8ixJg1cfJIoNNYjWcm0lezj1/XpUNFiZyVsU=' 'sha256-cLsHUHFgT/VGX04cZrJ9xgm4HbzTR7ptutkxK+7BlMk=' 'sha256-BwU8jMnQYUhjOpsDVABpfddV/DlP1ZYrFcTumYw7x54=' 'sha256-wz6ika9i3WU3bpUPdhYDZeO/NrDQniDyiscN0LWnyaY=' 'sha256-wy4DvlEW9PHPIGvQJW6Wv4woBSa/0LJHs8LHsBVVXCs=' 'sha256-065A0cJTDQ+hyKvufSL/flW02hIbgLndOINLRWux6To=' 'sha256-Ga5SLB8hPdWUE8Wb6LgZ05D9Z5vrdLAaPbDBW2m3BI8=' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com platform.linkedin.com platform-akam.linkedin.com platform-ecst.linkedin.com platform-azur.linkedin.com snap.licdn.com merchantpool1.linkedin.com/mdt.js; img-src data: blob: * 'self' *.licdn.com android-webview-video-poster:; font-src data: * 'self' *.licdn.com; style-src 'self' 'unsafe-inline' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; media-src 'self' *.licdn.com *.lynda.com; worker-src 'self' blob: static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com; frame-src 'self' www.youtube.com/embed/ www.youtube-nocookie.com/embed/ lnkd.demdex.net smartlock.google.com accounts.google.com player.vimeo.com *.linkedin.com www.slideshare.net *.megaphone.fm *.omny.fm *.sounder.fm msit.powerbi.com app.powerbi.com linkedin.github.io *.licdn.com *.adnxs.com acdn.adnxs-simple.com radar.cedexis.com edge-auth.microsoft.com flo.uri.sh li.protechts.net *.xlgmedia.com *.px-cloud.net merchantpool1.linkedin.com; frame-ancestors 'self' *.www.linkedin.com:*; manifest-src 'self'; report-uri https://www.linkedin.com/security/csp?f=d",
+      "hsts": "max-age=31536000"
+    }
+  },
+  {
+    "url": "https://github.com/OmarRez2",
+    "status": 200,
+    "final": "https://github.com/OmarRez2",
+    "type": "text/html; charset=utf-8",
+    "bytes": 235241,
+    "title": "OmarRez2 (Omar Rezk) · GitHub",
+    "headers": {
+      "csp": "default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com api.github.com/cmc_internal/api/; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com repository-images.githubusercontent.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com *.googleusercontent.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com 'sha256-tSjmyPUky1KbRZ0fw9VUil3wFEbeM82rtbJDygGJAXw='; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/",
+      "hsts": "max-age=31536000; includeSubdomains; preload"
+    }
+  },
+  {
+    "url": "https://www.kaggle.com/omarrezk",
+    "status": 200,
+    "final": "https://www.kaggle.com/omarrezk",
+    "type": "text/html; charset=utf-8",
+    "bytes": 5733,
+    "title": "Omar Rezk | Kaggle",
+    "headers": {
+      "csp": "object-src 'none'; script-src 'nonce-qfbB7WE1Znei1/QvddS3yw==' 'report-sample' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:; base-uri 'none'; report-uri https://csp.withgoogle.com/csp/kaggle/20201130; frame-src 'self' https://www.kaggleusercontent.com https://www.youtube.com/embed/ https://youtu.be https://polygraph-cool.github.io https://www.google.com/recaptcha/ https://www.docdroid.com https://www.docdroid.net https://kaggle-static.storage.googleapis.com https://kkb-production.jupyter-proxy.kaggle.net https://kkb-production.firebaseapp.com https://kaggle-metastore.firebaseapp.com https://apis.google.com https://content-sheets.googleapis.com/ https://accounts.google.com/ https://storage.googleapis.com https://docs.google.com https://drive.google.com https://calendar.google.com/ https://google.qualtrics.com/ https://player.kick.com/ https://player.twitch.tv/ https://kaggle.com http://localhost:* https://localhost:* localhost:* ;",
+      "hsts": "max-age=63072000; includeSubDomains; preload"
+    }
+  },
+  {
+    "url": "https://www.facebook.com/profile.php?id=100007444755586",
+    "status": 200,
+    "final": "https://www.facebook.com/people/Omar-Rezk/pfbid02rKWrh5nt5ukmGrmmuovo8rZFmPYX8z2JJb5f1THZxuGySQuYhUnAoeTkSkxnEN2cl/",
+    "type": "text/html; charset=\"utf-8\"",
+    "bytes": 524779,
+    "title": "Omar Rezk",
+    "headers": {
+      "csp": "default-src blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net *.facebook.net *.whatsapp.com *.whatsapp.net;script-src *.facebook.com *.fbcdn.net *.facebook.net 127.0.0.1:* 'nonce-4NEcnRTc' blob: 'self' connect.facebook.net 'unsafe-eval' https://accounts.google.com https://*.google-analytics.com *.google.com;style-src *.fbcdn.net data: *.facebook.com 'unsafe-inline' https://accounts.google.com https://fonts.googleapis.com;connect-src *.facebook.com facebook.com *.fbcdn.net *.facebook.net wss://*.facebook.com:* wss://*.whatsapp.com:* wss://*.fbcdn.net attachment.fbsbx.com ws://localhost:* blob: *.cdninstagram.com 'self' http://localhost:3103 wss://gateway.facebook.com wss://edge-chat.facebook.com wss://snaptu-d.facebook.com wss://kaios-d.facebook.com/ v.whatsapp.net *.fbsbx.com *.fb.com *.instagram.com *.ipification.com https://accounts.google.com https://*.google-analytics.com https://api.mapbox.com https://*.tiles.mapbox.com https://events.mapbox.com https://meta.privacy-gateway.cloudflare.com/relay https://meta-ohttp-relay-prod.fastly-edge.com;font-src data: *.facebook.com *.fbcdn.net *.fbsbx.com https://fonts.gstatic.com;img-src *.fbcdn.net *.facebook.com data: https://*.fbsbx.com facebook.com *.cdninstagram.com fbsbx.com fbcdn.net connect.facebook.net blob: android-webview-video-poster: *.whatsapp.net *.fb.com *.oculuscdn.com *.tenor.co *.tenor.com *.giphy.com https://trustly.one/ https://*.trustly.one/ https://paywithmybank.com/ https://*.paywithmybank.com/ https://www.googleadservices.com https://googleads.g.doubleclick.net https://*.google-analytics.com;media-src *.cdninstagram.com blob: *.fbcdn.net *.fbsbx.com www.facebook.com *.facebook.com data: *.tenor.co *.tenor.com https://*.giphy.com;child-src data: blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;frame-src *.facebook.com *.fbsbx.com fbsbx.com data: www.instagram.com *.fbcdn.net accounts.meta.com *.accounts.meta.com *.fbthirdpartypixel.com *.ipification.com https://trustly.one/ https://*.trustly.one/ https://paywithmybank.com/ https://*.paywithmybank.com/ https://www.googleadservices.com https://googleads.g.doubleclick.net https://www.google.com https://td.doubleclick.net *.google.com *.doubleclick.net;manifest-src data: blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;object-src data: blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;worker-src blob: *.facebook.com data:;block-all-mixed-content;upgrade-insecure-requests;",
+      "hsts": "max-age=15552000; preload"
+    }
+  },
+  {
+    "url": "https://www.instagram.com/3omar_rez2/",
+    "status": 200,
+    "final": "https://www.instagram.com/3omar_rez2/",
+    "type": "text/html; charset=\"utf-8\"",
+    "bytes": 734606,
+    "title": "‎عـُـمــر‎ (&#064;3omar_rez2) • Instagram photos and videos",
+    "headers": {
+      "csp": "default-src *.facebook.com *.fbcdn.net *.instagram.com blob:;script-src *.instagram.com static.cdninstagram.com z-p42-static.cdninstagram.com https://instagram.com https://*.www.instagram.com https://*.cdninstagram.com wss://www.instagram.com blob: *.facebook.com *.fbcdn.net *.facebook.net 127.0.0.1:* 'nonce-e4wMHyUi' 'self' 'unsafe-eval' https://*.google-analytics.com https://translate.google.com https://apis.google.com https://accounts.google.com;style-src *.instagram.com static.cdninstagram.com z-p42-static.cdninstagram.com https://*.www.instagram.com data: blob: 'unsafe-inline' *.fbcdn.net *.facebook.com https://accounts.google.com;connect-src *.instagram.com wss://edge-chat.instagram.com connect.facebook.net https://instagram.com https://*.www.instagram.com https://*.graph.instagram.com https://*.i.instagram.com https://*.od.instagram.com https://i.threads.net https://i.threads.com https://*.od.threads.net https://*.od.threads.com wss://www.instagram.com blob: *.facebook.com facebook.com *.fbcdn.net *.facebook.net wss://*.facebook.com:* ws://localhost:* *.cdninstagram.com wss://*.instagram.com:* 'self' *.ipification.com https://accounts.google.com https://meta.privacy-gateway.cloudflare.com/relay;font-src *.instagram.com static.cdninstagram.com z-p42-static.cdninstagram.com data: *.fbcdn.net *.intern.facebook.com *.facebook.com https://*.cdninstagram.com https://fonts.gstatic.com;img-src *.instagram.com *.facebook.com *.fbcdn.net data: *.cdninstagram.com *.whatsapp.net blob: https://*.threads.net https://*.threads.com *.fbsbx.com android-webview-video-poster: *.oculuscdn.com *.giphy.com *.tenor.co *.tenor.com www.googleadservices.com *.doubleclick.net *.google.com *.google.co.uk https://www.gstatic.com https://*.google-analytics.com;media-src *.facebook.com *.fbcdn.net *.instagram.com *.cdninstagram.com *.fbsbx.com data: blob: https://*.giphy.com *.tenor.co *.tenor.com;child-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;frame-src https://instagram.com https://connect.facebook.net *.instagram.com *.facebook.com *.fbsbx.com fbsbx.com data: *.ipification.com www.googleadservices.com *.doubleclick.net *.google.com *.google.co.uk;manifest-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;object-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;block-all-mixed-content;upgrade-insecure-requests;",
+      "hsts": "max-age=31536000; preload; includeSubDomains"
+    }
+  },
+  {
+    "url": "https://www.kaggle.com/code/omarrezk/tesla-stock-eda-prediction",
+    "status": 200,
+    "final": "https://www.kaggle.com/code/omarrezk/tesla-stock-eda-prediction",
+    "type": "text/html; charset=utf-8",
+    "bytes": 8874,
+    "title": "Tesla Stock EDA &amp; Prediction   | Kaggle",
+    "headers": {
+      "csp": "object-src 'none'; script-src 'nonce-nQycPf0xPY0cYgg9u0fhdw==' 'report-sample' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:; base-uri 'none'; report-uri https://csp.withgoogle.com/csp/kaggle/20201130; frame-src 'self' https://www.kaggleusercontent.com https://www.youtube.com/embed/ https://youtu.be https://polygraph-cool.github.io https://www.google.com/recaptcha/ https://www.docdroid.com https://www.docdroid.net https://kaggle-static.storage.googleapis.com https://kkb-production.jupyter-proxy.kaggle.net https://kkb-production.firebaseapp.com https://kaggle-metastore.firebaseapp.com https://apis.google.com https://content-sheets.googleapis.com/ https://accounts.google.com/ https://storage.googleapis.com https://docs.google.com https://drive.google.com https://calendar.google.com/ https://google.qualtrics.com/ https://player.kick.com/ https://player.twitch.tv/ https://kaggle.com http://localhost:* https://localhost:* localhost:* ;",
+      "hsts": "max-age=63072000; includeSubDomains; preload"
+    }
+  },
+  {
+    "url": "https://www.kaggle.com/code/ahmadbarkat/cardiovascular-disease",
+    "status": 200,
+    "final": "https://www.kaggle.com/code/ahmadbarkat/cardiovascular-disease",
+    "type": "text/html; charset=utf-8",
+    "bytes": 8875,
+    "title": "Cardiovascular Disease | Kaggle",
+    "headers": {
+      "csp": "object-src 'none'; script-src 'nonce-ycMHlm6O+c3cegLoZ6Sv8w==' 'report-sample' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:; base-uri 'none'; report-uri https://csp.withgoogle.com/csp/kaggle/20201130; frame-src 'self' https://www.kaggleusercontent.com https://www.youtube.com/embed/ https://youtu.be https://polygraph-cool.github.io https://www.google.com/recaptcha/ https://www.docdroid.com https://www.docdroid.net https://kaggle-static.storage.googleapis.com https://kkb-production.jupyter-proxy.kaggle.net https://kkb-production.firebaseapp.com https://kaggle-metastore.firebaseapp.com https://apis.google.com https://content-sheets.googleapis.com/ https://accounts.google.com/ https://storage.googleapis.com https://docs.google.com https://drive.google.com https://calendar.google.com/ https://google.qualtrics.com/ https://player.kick.com/ https://player.twitch.tv/ https://kaggle.com http://localhost:* https://localhost:* localhost:* ;",
+      "hsts": "max-age=63072000; includeSubDomains; preload"
+    }
+  },
+  {
+    "url": "https://github.com/OmarRez2/Power-BI-Finance-Analysis",
+    "status": 200,
+    "final": "https://github.com/OmarRez2/Power-BI-Finance-Analysis",
+    "type": "text/html; charset=utf-8",
+    "bytes": 307494,
+    "title": "GitHub - OmarRez2/Power-BI-Finance-Analysis · GitHub",
+    "headers": {
+      "csp": "default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com api.github.com/cmc_internal/api/; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com repository-images.githubusercontent.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com *.googleusercontent.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com 'sha256-tSjmyPUky1KbRZ0fw9VUil3wFEbeM82rtbJDygGJAXw='; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/",
+      "hsts": "max-age=31536000; includeSubdomains; preload"
+    }
+  },
+  {
+    "url": "https://github.com/OmarRez2/Sales-Intelligence-Hub",
+    "status": 200,
+    "final": "https://github.com/OmarRez2/Sales-Intelligence-Hub",
+    "type": "text/html; charset=utf-8",
+    "bytes": 304561,
+    "title": "GitHub - OmarRez2/Sales-Intelligence-Hub · GitHub",
+    "headers": {
+      "csp": "default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com api.github.com/cmc_internal/api/; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com repository-images.githubusercontent.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com *.googleusercontent.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com 'sha256-tSjmyPUky1KbRZ0fw9VUil3wFEbeM82rtbJDygGJAXw='; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/",
+      "hsts": "max-age=31536000; includeSubdomains; preload"
+    }
+  },
+  {
+    "url": "https://github.com/OmarRez2/Uber",
+    "status": 200,
+    "final": "https://github.com/OmarRez2/Uber",
+    "type": "text/html; charset=utf-8",
+    "bytes": 316521,
+    "title": "GitHub - OmarRez2/Uber · GitHub",
+    "headers": {
+      "csp": "default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com api.github.com/cmc_internal/api/; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com repository-images.githubusercontent.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com *.googleusercontent.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com 'sha256-tSjmyPUky1KbRZ0fw9VUil3wFEbeM82rtbJDygGJAXw='; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/",
+      "hsts": "max-age=31536000; includeSubdomains; preload"
+    }
+  },
+  {
+    "url": "https://github.com/OmarRez2/Bank-Loan",
+    "status": 200,
+    "final": "https://github.com/OmarRez2/Bank-Loan",
+    "type": "text/html; charset=utf-8",
+    "bytes": 283626,
+    "title": "GitHub - OmarRez2/Bank-Loan · GitHub",
+    "headers": {
+      "csp": "default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com api.github.com/cmc_internal/api/; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com repository-images.githubusercontent.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com *.googleusercontent.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com 'sha256-tSjmyPUky1KbRZ0fw9VUil3wFEbeM82rtbJDygGJAXw='; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/",
+      "hsts": "max-age=31536000; includeSubdomains; preload"
+    }
+  },
+  {
+    "url": "https://github.com/OmarRez2/Pizza-Sales-Project",
+    "status": 200,
+    "final": "https://github.com/OmarRez2/Pizza-Sales-Project",
+    "type": "text/html; charset=utf-8",
+    "bytes": 286281,
+    "title": "GitHub - OmarRez2/Pizza-Sales-Project · GitHub",
+    "headers": {
+      "csp": "default-src 'none'; base-uri 'self'; child-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com *.rel.tunnels.api.visualstudio.com wss://*.rel.tunnels.api.visualstudio.com github.githubassets.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com proxy.individual.githubcopilot.com proxy.business.githubcopilot.com proxy.enterprise.githubcopilot.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net productionresultssa1.blob.core.windows.net productionresultssa2.blob.core.windows.net productionresultssa3.blob.core.windows.net productionresultssa4.blob.core.windows.net productionresultssa5.blob.core.windows.net productionresultssa6.blob.core.windows.net productionresultssa7.blob.core.windows.net productionresultssa8.blob.core.windows.net productionresultssa9.blob.core.windows.net productionresultssa10.blob.core.windows.net productionresultssa11.blob.core.windows.net productionresultssa12.blob.core.windows.net productionresultssa13.blob.core.windows.net productionresultssa14.blob.core.windows.net productionresultssa15.blob.core.windows.net productionresultssa16.blob.core.windows.net productionresultssa17.blob.core.windows.net productionresultssa18.blob.core.windows.net productionresultssa19.blob.core.windows.net github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com wss://alive-staging.github.com api.githubcopilot.com api.individual.githubcopilot.com api.business.githubcopilot.com api.enterprise.githubcopilot.com wss://production-copilot-host.webpubsub.azure.com api.github.com/cmc_internal/api/; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com private-avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com release-assets.githubusercontent.com secured-user-images.githubusercontent.com user-images.githubusercontent.com private-user-images.githubusercontent.com opengraph.githubassets.com repository-images.githubusercontent.com marketplace-screenshots.githubusercontent.com copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/ github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com explore-feed.github.com *.googleusercontent.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com secured-user-images.githubusercontent.com private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com github.githubassets.com; script-src github.githubassets.com 'sha256-tSjmyPUky1KbRZ0fw9VUil3wFEbeM82rtbJDygGJAXw='; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.githubassets.com github.com/assets-cdn/worker/ github.com/assets/ gist.github.com/assets-cdn/worker/",
+      "hsts": "max-age=31536000; includeSubdomains; preload"
+    }
+  },
+  {
+    "url": "https://omarrez2.github.io/",
+    "status": 200,
+    "final": "https://omarrez2.github.io/",
+    "type": "text/html; charset=utf-8",
+    "bytes": 111496,
+    "title": "Omar Rezk | Data Analyst &amp; Power BI Developer",
+    "headers": {
+      "csp": null,
+      "hsts": "max-age=31556952"
+    }
+  },
+  {
+    "url": "https://omarrez2.github.io/about/",
+    "status": 200,
+    "final": "https://omarrez2.github.io/about/",
+    "type": "text/html; charset=utf-8",
+    "bytes": 88725,
+    "title": "About | Omar Rezk",
+    "headers": {
+      "csp": null,
+      "hsts": "max-age=31556952"
+    }
+  },
+  {
+    "url": "https://omarrez2.github.io/projects/",
+    "status": 200,
+    "final": "https://omarrez2.github.io/projects/",
+    "type": "text/html; charset=utf-8",
+    "bytes": 81818,
+    "title": "Projects | Omar Rezk",
+    "headers": {
+      "csp": null,
+      "hsts": "max-age=31556952"
+    }
+  },
+  {
+    "url": "https://omarrez2.github.io/certificates/",
+    "status": 200,
+    "final": "https://omarrez2.github.io/certificates/",
+    "type": "text/html; charset=utf-8",
+    "bytes": 86972,
+    "title": "Certificates | Omar Rezk",
+    "headers": {
+      "csp": null,
+      "hsts": "max-age=31556952"
+    }
+  },
+  {
+    "url": "https://omarrez2.github.io/contact/",
+    "status": 200,
+    "final": "https://omarrez2.github.io/contact/",
+    "type": "text/html; charset=utf-8",
+    "bytes": 65777,
+    "title": "Contact | Omar Rezk",
+    "headers": {
+      "csp": null,
+      "hsts": "max-age=31556952"
+    }
+  },
+  {
+    "url": "https://omarrez2.github.io/projects/finsight-finance-analysis/",
+    "status": 200,
+    "final": "https://omarrez2.github.io/projects/finsight-finance-analysis/",
+    "type": "text/html; charset=utf-8",
+    "bytes": 95746,
+    "title": "FinSight — Finance Analysis | Omar Rezk",
+    "headers": {
+      "csp": null,
+      "hsts": "max-age=31556952"
+    }
+  },
+  {
+    "url": "https://omarrez2.github.io/projects/sales-intelligence-hub/",
+    "status": 200,
+    "final": "https://omarrez2.github.io/projects/sales-intelligence-hub/",
+    "type": "text/html; charset=utf-8",
+    "bytes": 92513,
+    "title": "Sales Intelligence Hub | Omar Rezk",
+    "headers": {
+      "csp": null,
+      "hsts": "max-age=31556952"
+    }
+  },
+  {
+    "url": "https://omarrez2.github.io/projects/uber-trips-analytics/",
+    "status": 200,
+    "final": "https://omarrez2.github.io/projects/uber-trips-analytics/",
+    "type": "text/html; charset=utf-8",
+    "bytes": 86132,
+    "title": "Uber Trips Analytics | Omar Rezk",
+    "headers": {
+      "csp": null,
+      "hsts": "max-age=31556952"
+    }
+  },
+  {
+    "url": "https://omarrez2.github.io/projects/bank-loan-analysis/",
+    "status": 200,
+    "final": "https://omarrez2.github.io/projects/bank-loan-analysis/",
+    "type": "text/html; charset=utf-8",
+    "bytes": 86378,
+    "title": "Bank Loan Portfolio Analysis | Omar Rezk",
+    "headers": {
+      "csp": null,
+      "hsts": "max-age=31556952"
+    }
+  },
+  {
+    "url": "https://omarrez2.github.io/projects/pizza-sales-performance/",
+    "status": 200,
+    "final": "https://omarrez2.github.io/projects/pizza-sales-performance/",
+    "type": "text/html; charset=utf-8",
+    "bytes": 85917,
+    "title": "Pizza Sales Performance | Omar Rezk",
+    "headers": {
+      "csp": null,
+      "hsts": "max-age=31556952"
+    }
+  },
+  {
+    "url": "https://omarrez2.github.io/missing-audit-page/",
+    "status": 404,
+    "final": "https://omarrez2.github.io/missing-audit-page/",
+    "type": "text/html; charset=utf-8",
+    "bytes": 48146,
+    "title": "Omar Rezk | Data Analyst &amp; Power BI Developer",
+    "headers": {
+      "csp": null,
+      "hsts": "max-age=31556952"
+    }
+  },
+  {
+    "url": "https://omarrez2.github.io/robots.txt",
+    "status": 200,
+    "final": "https://omarrez2.github.io/robots.txt",
+    "type": "text/plain; charset=utf-8",
+    "bytes": 105,
+    "headers": {
+      "csp": null,
+      "hsts": "max-age=31556952"
+    }
+  },
+  {
+    "url": "https://omarrez2.github.io/sitemap.xml",
+    "status": 200,
+    "final": "https://omarrez2.github.io/sitemap.xml",
+    "type": "application/xml",
+    "bytes": 2270,
+    "headers": {
+      "csp": null,
+      "hsts": "max-age=31556952"
+    }
+  },
+  {
+    "url": "https://omarrez2.github.io/documents/Omar-Mahmoud-Sophy-Rezk-CV.pdf",
+    "status": 200,
+    "final": "https://omarrez2.github.io/documents/Omar-Mahmoud-Sophy-Rezk-CV.pdf",
+    "type": "application/pdf",
+    "bytes": 411270,
+    "headers": {
+      "csp": null,
+      "hsts": "max-age=31556952"
+    },
+    "pdfSignature": "%PDF-"
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/omar-portrait-suit-v2.webp",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/omar-portrait-suit-v2.webp",
+    "type": "image/webp",
+    "bytes": 96470,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/projects/sales-overview.webp",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/projects/sales-overview.webp",
+    "type": "image/webp",
+    "bytes": 73938,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/projects/uber-overview.webp",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/projects/uber-overview.webp",
+    "type": "image/webp",
+    "bytes": 68538,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/projects/bank-loan-overview.webp",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/projects/bank-loan-overview.webp",
+    "type": "image/webp",
+    "bytes": 117178,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/projects/finsight-overview.webp",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/projects/finsight-overview.webp",
+    "type": "image/webp",
+    "bytes": 88770,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/projects/pizza-sales-overview.webp",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/projects/pizza-sales-overview.webp",
+    "type": "image/webp",
+    "bytes": 76788,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/certificates/almentor-sql-masterclass.jpg",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/certificates/almentor-sql-masterclass.jpg",
+    "type": "image/jpeg",
+    "bytes": 76618,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/certificates/samsung-ai.jpg",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/certificates/samsung-ai.jpg",
+    "type": "image/jpeg",
+    "bytes": 202096,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/certificates/huawei-hcia-ai.jpeg",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/certificates/huawei-hcia-ai.jpeg",
+    "type": "image/jpeg",
+    "bytes": 88460,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/certificates/iti-python-web-development.jpg",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/certificates/iti-python-web-development.jpg",
+    "type": "image/jpeg",
+    "bytes": 198267,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/certificates/iti-ui-ux-front-end.jpg",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/certificates/iti-ui-ux-front-end.jpg",
+    "type": "image/jpeg",
+    "bytes": 136655,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/certificates/ieee-data-analysis.jpg",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/certificates/ieee-data-analysis.jpg",
+    "type": "image/jpeg",
+    "bytes": 125559,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/certificates/codeavour-judge.jpg",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/certificates/codeavour-judge.jpg",
+    "type": "image/jpeg",
+    "bytes": 391491,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/certificates/almentor-digital-cubs-trainer.jpg",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/certificates/almentor-digital-cubs-trainer.jpg",
+    "type": "image/jpeg",
+    "bytes": 159974,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/projects/finsight-landing.webp",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/projects/finsight-landing.webp",
+    "type": "image/webp",
+    "bytes": 79376,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/projects/finsight-transactions.webp",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/projects/finsight-transactions.webp",
+    "type": "image/webp",
+    "bytes": 128904,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/projects/sales-product-customer.webp",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/projects/sales-product-customer.webp",
+    "type": "image/webp",
+    "bytes": 72262,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  },
+  {
+    "url": "http://127.0.0.1:4173/images/projects/sales-regional.webp",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/images/projects/sales-regional.webp",
+    "type": "image/webp",
+    "bytes": 72724,
+    "headers": {
+      "csp": null,
+      "hsts": null
+    }
+  }
+]

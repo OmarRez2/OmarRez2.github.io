@@ -78,7 +78,7 @@ export function CertificateGallery({ certificates }: { certificates: Certificate
                     alt={`${certificate.title} certificate issued by ${certificate.issuer}`}
                     fill
                     sizes="95vw"
-                    priority
+                    loading="eager"
                     className="object-contain p-2 sm:p-4"
                   />
                 </div>

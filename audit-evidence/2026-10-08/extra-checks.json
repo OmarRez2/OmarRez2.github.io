@@ -1,0 +1,406 @@
+{
+  "axe": [
+    {
+      "theme": "light",
+      "path": "/",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".sm\\:inline"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.98 (foreground color: #ffffff, background color: #25d366, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "region",
+          "nodes": [
+            {
+              "target": [
+                ".right-4"
+              ],
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 38
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "path": "/projects/",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".sm\\:inline"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.98 (foreground color: #ffffff, background color: #25d366, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "nodes": [
+            {
+              "target": [
+                "div:nth-child(1) > article > .focus-visible\\:-outline-offset-2.h-full.flex-col > .flex-1.sm\\:p-6.p-5 > .items-start.gap-3.justify-between > h3"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "region",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 21
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "path": "/certificates/",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".sm\\:inline"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.98 (foreground color: #ffffff, background color: #25d366, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "region",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 37
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "path": "/contact/",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".sm\\:inline"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.98 (foreground color: #ffffff, background color: #25d366, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "region",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 24
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "path": "/",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".sm\\:inline"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.98 (foreground color: #ffffff, background color: #25d366, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "region",
+          "nodes": [
+            {
+              "target": [
+                ".right-4"
+              ],
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 38
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "path": "/projects/",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".sm\\:inline"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.98 (foreground color: #ffffff, background color: #25d366, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "nodes": [
+            {
+              "target": [
+                "div:nth-child(1) > article > .focus-visible\\:-outline-offset-2.h-full.flex-col > .flex-1.sm\\:p-6.p-5 > .items-start.gap-3.justify-between > h3"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "region",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 21
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "path": "/certificates/",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".sm\\:inline"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.98 (foreground color: #ffffff, background color: #25d366, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "region",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 37
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "path": "/contact/",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".sm\\:inline"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.98 (foreground color: #ffffff, background color: #25d366, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "region",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 24
+        }
+      ]
+    }
+  ],
+  "certFocus": [
+    {
+      "text": "Download ",
+      "inside": true
+    },
+    {
+      "text": "Close certificate viewer",
+      "inside": true
+    },
+    {
+      "text": "Full image ",
+      "inside": true
+    },
+    {
+      "text": "Download ",
+      "inside": true
+    },
+    {
+      "text": "Close certificate viewer",
+      "inside": true
+    }
+  ],
+  "certEscape": {
+    "open": false,
+    "focus": "View SQL Masterclass - Advanced Level certificate"
+  },
+  "clipboard": {
+    "text": "Email copied"
+  },
+  "small": [
+    {
+      "width": 320,
+      "path": "/",
+      "scrollWidth": 305,
+      "clipped": []
+    },
+    {
+      "width": 320,
+      "path": "/projects/",
+      "scrollWidth": 305,
+      "clipped": []
+    },
+    {
+      "width": 320,
+      "path": "/contact/",
+      "scrollWidth": 305,
+      "clipped": []
+    },
+    {
+      "width": 360,
+      "path": "/",
+      "scrollWidth": 345,
+      "clipped": []
+    },
+    {
+      "width": 360,
+      "path": "/projects/",
+      "scrollWidth": 345,
+      "clipped": []
+    },
+    {
+      "width": 360,
+      "path": "/contact/",
+      "scrollWidth": 345,
+      "clipped": []
+    },
+    {
+      "width": 1024,
+      "path": "/",
+      "scrollWidth": 1009,
+      "clipped": []
+    },
+    {
+      "width": 1024,
+      "path": "/projects/",
+      "scrollWidth": 1009,
+      "clipped": []
+    },
+    {
+      "width": 1024,
+      "path": "/contact/",
+      "scrollWidth": 1009,
+      "clipped": []
+    }
+  ],
+  "live": {
+    "title": "Omar Rezk | Data Analyst & Power BI Developer",
+    "h1": "Data made clear. Decisions made better.",
+    "main": "1",
+    "images": [
+      {
+        "src": "https://omarrez2.github.io/images/omar-portrait-suit-v2.webp",
+        "loaded": true
+      },
+      {
+        "src": "https://omarrez2.github.io/images/projects/sales-overview.webp",
+        "loaded": true
+      },
+      {
+        "src": "https://omarrez2.github.io/images/projects/uber-overview.webp",
+        "loaded": true
+      },
+      {
+        "src": "https://omarrez2.github.io/images/projects/bank-loan-overview.webp",
+        "loaded": true
+      }
+    ]
+  }
+}

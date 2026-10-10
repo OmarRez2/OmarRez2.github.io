@@ -1,12 +1,15 @@
 "use client";
 
-import { useRef, useState, type FormEvent } from "react";
+import { useRef, useState, useSyncExternalStore, type FormEvent } from "react";
 import { Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
+const subscribe = () => () => undefined;
+
 export function ContactForm() {
+  const hydrated = useSyncExternalStore(subscribe, () => true, () => false);
   const form = useRef<HTMLFormElement>(null);
   const [draft, setDraft] = useState("");
   const [status, setStatus] = useState("");
@@ -63,10 +66,10 @@ export function ContactForm() {
         Message
         <Textarea name="message" required placeholder="Tell me about the role, project, or data challenge." className="min-h-40 rounded-xl bg-background" />
       </label>
-      <Button type="submit" className="mt-6 h-12 w-full rounded-xl bg-primary text-primary-foreground shadow-lg shadow-primary/15 hover:opacity-90 sm:w-auto sm:px-7">
+      <Button type="submit" disabled={!hydrated} className="mt-6 h-12 w-full rounded-xl bg-primary text-primary-foreground shadow-lg shadow-primary/15 hover:opacity-90 sm:w-auto sm:px-7">
         Open email app <Send className="size-4" />
       </Button>
-      <Button type="button" variant="outline" onClick={copyDraft} className="mt-3 h-12 w-full rounded-xl sm:ml-3 sm:w-auto">Copy message</Button>
+      <Button type="button" disabled={!hydrated} variant="outline" onClick={copyDraft} className="mt-3 h-12 w-full rounded-xl sm:ml-3 sm:w-auto">Copy message</Button>
       <p role="status" className="mt-4 text-sm text-muted-foreground">{status}</p>
       {draft && <label className="mt-4 block text-sm">Prepared email (select to copy)<Textarea readOnly value={draft} className="mt-2 min-h-48" /></label>}
     </form>

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
+import { AnalyticsConsent } from "@/components/analytics-consent";
 import { AnimatedBackground } from "@/components/animated-background";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
@@ -98,22 +98,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <div className="relative z-10"><Footer /></div>
           <aside aria-label="Quick contact"><WhatsAppButton /></aside>
         </ThemeProvider>
-        {gaMeasurementId ? (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
-              strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', ${JSON.stringify(gaMeasurementId)});
-              `}
-            </Script>
-          </>
-        ) : null}
+        {gaMeasurementId ? <AnalyticsConsent measurementId={gaMeasurementId} /> : null}
       </body>
     </html>
   );

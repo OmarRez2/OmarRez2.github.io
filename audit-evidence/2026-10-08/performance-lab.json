@@ -1,0 +1,75 @@
+{
+  "conditions": "Chrome headless, local uncompressed HTTP, cold cache, 390x844 mobile emulation, CPU x4, 150ms latency, 200000 B/s download, 93750 B/s upload, GA blocked, 14s observation per run",
+  "results": [
+    {
+      "lcp": 8188,
+      "cls": 0,
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 2792
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 3408
+        }
+      ],
+      "longTasks": [
+        214,
+        191,
+        78,
+        106,
+        87,
+        58
+      ],
+      "jsDecoded": 753156,
+      "transfer": 1335253,
+      "load": 7049.5,
+      "ready": "complete"
+    },
+    {
+      "lcp": 7348,
+      "cls": 0,
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 2828
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 2912
+        }
+      ],
+      "longTasks": [
+        103,
+        97
+      ],
+      "jsDecoded": 753156,
+      "transfer": 1335253,
+      "load": 6862.799999999814,
+      "ready": "complete"
+    },
+    {
+      "lcp": 7572,
+      "cls": 0,
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 2836
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 2940
+        }
+      ],
+      "longTasks": [
+        74,
+        85
+      ],
+      "jsDecoded": 753156,
+      "transfer": 1335253,
+      "load": 6878,
+      "ready": "complete"
+    }
+  ]
+}

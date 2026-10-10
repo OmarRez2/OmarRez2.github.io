@@ -1,0 +1,85 @@
+{
+  "target": "https://omarrez2.github.io/",
+  "conditions": "Chrome headless, cold cache, 390x844 mobile emulation, CPU x4, 150ms latency, 200000 B/s download, 93750 B/s upload, GA blocked, 14s observation per run; local server uncompressed, public server uses its own compression",
+  "results": [
+    {
+      "lcp": 5944,
+      "cls": 0,
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 848
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 1064
+        }
+      ],
+      "longTasks": [
+        456,
+        79,
+        314,
+        181,
+        210,
+        137,
+        325,
+        77,
+        87,
+        54
+      ],
+      "jsDecoded": 776940,
+      "transfer": 655821,
+      "load": 3607.2999999998137,
+      "ready": "complete"
+    },
+    {
+      "lcp": 4716,
+      "cls": 0,
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 912
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 1016
+        }
+      ],
+      "longTasks": [
+        62,
+        56,
+        150,
+        240,
+        94
+      ],
+      "jsDecoded": 776940,
+      "transfer": 655829,
+      "load": 3549.2000000001863,
+      "ready": "complete"
+    },
+    {
+      "lcp": 4776,
+      "cls": 0,
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 1020
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 1116
+        }
+      ],
+      "longTasks": [
+        68,
+        158,
+        301,
+        147
+      ],
+      "jsDecoded": 776940,
+      "transfer": 655821,
+      "load": 3614.9000000003725,
+      "ready": "complete"
+    }
+  ]
+}

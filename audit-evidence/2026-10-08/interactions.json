@@ -1,0 +1,565 @@
+{
+  "mobileMenu": {
+    "dialog": true,
+    "links": [
+      {
+        "text": "Home\n↗",
+        "href": "http://127.0.0.1:4173/"
+      },
+      {
+        "text": "About\n↗",
+        "href": "http://127.0.0.1:4173/about/"
+      },
+      {
+        "text": "Projects\n↗",
+        "href": "http://127.0.0.1:4173/projects/"
+      },
+      {
+        "text": "Certificates\n↗",
+        "href": "http://127.0.0.1:4173/certificates/"
+      },
+      {
+        "text": "Contact\n↗",
+        "href": "http://127.0.0.1:4173/contact/"
+      }
+    ],
+    "focus": "<a type=\"button\" tabindex=\"0\" data-slot=\"sheet-close\" href=\"/\"><span class=\"flex items-center justify-between rounded-2xl px-4 py-4 text-base font-medium transition hover:bg-muted hover:text-foreground bg-muted text-foreground\">Home<span aria-hidden=\"true\">↗</span></span></a>"
+  },
+  "mobileNavigation": {
+    "path": "/projects/",
+    "open": false
+  },
+  "filters": [
+    {
+      "filter": "Python",
+      "selected": "dark",
+      "projects": [
+        "FinSight — Finance Analysis",
+        "Sales Intelligence Hub",
+        "Uber Trips Analytics"
+      ]
+    },
+    {
+      "filter": "SQL",
+      "selected": "dark",
+      "projects": [
+        "FinSight — Finance Analysis",
+        "Sales Intelligence Hub",
+        "Uber Trips Analytics",
+        "Bank Loan Portfolio Analysis",
+        "Pizza Sales Performance"
+      ]
+    },
+    {
+      "filter": "Power BI",
+      "selected": "dark",
+      "projects": [
+        "FinSight — Finance Analysis",
+        "Sales Intelligence Hub",
+        "Uber Trips Analytics",
+        "Bank Loan Portfolio Analysis",
+        "Pizza Sales Performance"
+      ]
+    },
+    {
+      "filter": "All",
+      "selected": "dark",
+      "projects": [
+        "FinSight — Finance Analysis",
+        "Sales Intelligence Hub",
+        "Uber Trips Analytics",
+        "Bank Loan Portfolio Analysis",
+        "Pizza Sales Performance"
+      ]
+    }
+  ],
+  "projectNavigation": {
+    "path": "/projects/finsight-finance-analysis/",
+    "h1": "FinSight — Finance Analysis"
+  },
+  "projectDialog": {
+    "open": true,
+    "images": [
+      {
+        "loaded": true,
+        "width": 333,
+        "height": 651.390625
+      }
+    ],
+    "focus": "Close image"
+  },
+  "projectEscape": true,
+  "certificateDialog": {
+    "role": "base-ui-_r_1_",
+    "links": [
+      {
+        "text": "Full image",
+        "download": false,
+        "href": "http://127.0.0.1:4173/images/certificates/almentor-sql-masterclass.jpg"
+      },
+      {
+        "text": "Download",
+        "download": true,
+        "href": "http://127.0.0.1:4173/images/certificates/almentor-sql-masterclass.jpg"
+      }
+    ],
+    "focus": "<a href=\"/images/certificates/almentor-sql-masterclass.jpg\" target=\"_blank\" rel=\"noreferrer\" type=\"button\" tabindex=\"0\" data-slot=\"button\" class=\"group/button inline-flex shrink-0 items-center justify-center border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 gap-1.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 h-10 rounded-full px-4\">Full image <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-external-link size-4\" aria-hidden=\"true\"><path d=\"M15 3h6v6\"></path><path d=\"M10 14 21 3\"></path><path d=\"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6\"></path></svg></a>"
+  },
+  "certificateEscape": false,
+  "themeInitial": {
+    "open": true,
+    "focus": "<button type=\"button\" aria-label=\"Close customization\" class=\"rounded-full p-2 hover:bg-muted\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-x size-4\" aria-hidden=\"true\"><path d=\"M18 6 6 18\"></path><path d=\"m6 6 12 12\"></path></svg></button>"
+  },
+  "themePersistence": {
+    "stored": {
+      "preset": "ocean"
+    },
+    "accent": "#45d4cd"
+  },
+  "light": "light",
+  "axe": [
+    {
+      "theme": "light",
+      "path": "/",
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodes": [
+            {
+              "target": [
+                ".right-4"
+              ],
+              "html": "<a href=\"https://wa.me/201002127404?text=Hello%20Omar%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"Chat with Omar on WhatsApp\" title=\"Chat on WhatsApp\" class=\"group fixed bottom-4 right-4 z-50 inline-flex h-13 items-center justify-center gap-2 rounded-full border border-white/15 bg-[#25D366] px-4 text-sm font-semibold text-white shadow-[0_16px_45px_-16px_rgba(37,211,102,0.85)] transition duration-300 hover:-translate-y-1 hover:bg-[#20bd5a] hover:shadow-[0_20px_55px_-14px_rgba(37,211,102,0.9)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-6 sm:right-6\">",
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 9
+        }
+      ],
+      "passes": 41
+    },
+    {
+      "theme": "light",
+      "path": "/about/",
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "html": "<a href=\"https://wa.me/201002127404?text=Hello%20Omar%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"Chat with Omar on WhatsApp\" title=\"Chat on WhatsApp\" class=\"group fixed bottom-4 right-4 z-50 inline-flex h-13 items-center justify-center gap-2 rounded-full border border-white/15 bg-[#25D366] px-4 text-sm font-semibold text-white shadow-[0_16px_45px_-16px_rgba(37,211,102,0.85)] transition duration-300 hover:-translate-y-1 hover:bg-[#20bd5a] hover:shadow-[0_20px_55px_-14px_rgba(37,211,102,0.9)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-6 sm:right-6\">",
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ],
+      "passes": 41
+    },
+    {
+      "theme": "light",
+      "path": "/projects/",
+      "violations": [
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodes": [
+            {
+              "target": [
+                "div:nth-child(1) > article > .focus-visible\\:-outline-offset-2.h-full.flex-col > .flex-1.sm\\:p-6.p-5 > .items-start.gap-3.justify-between > h3"
+              ],
+              "html": "<h3 class=\"text-xl font-semibold leading-tight tracking-[-0.025em]\">FinSight — Finance Analysis</h3>",
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "html": "<a href=\"https://wa.me/201002127404?text=Hello%20Omar%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"Chat with Omar on WhatsApp\" title=\"Chat on WhatsApp\" class=\"group fixed bottom-4 right-4 z-50 inline-flex h-13 items-center justify-center gap-2 rounded-full border border-white/15 bg-[#25D366] px-4 text-sm font-semibold text-white shadow-[0_16px_45px_-16px_rgba(37,211,102,0.85)] transition duration-300 hover:-translate-y-1 hover:bg-[#20bd5a] hover:shadow-[0_20px_55px_-14px_rgba(37,211,102,0.9)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-6 sm:right-6\">",
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 3
+        }
+      ],
+      "passes": 41
+    },
+    {
+      "theme": "light",
+      "path": "/certificates/",
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "html": "<a href=\"https://wa.me/201002127404?text=Hello%20Omar%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"Chat with Omar on WhatsApp\" title=\"Chat on WhatsApp\" class=\"group fixed bottom-4 right-4 z-50 inline-flex h-13 items-center justify-center gap-2 rounded-full border border-white/15 bg-[#25D366] px-4 text-sm font-semibold text-white shadow-[0_16px_45px_-16px_rgba(37,211,102,0.85)] transition duration-300 hover:-translate-y-1 hover:bg-[#20bd5a] hover:shadow-[0_20px_55px_-14px_rgba(37,211,102,0.9)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-6 sm:right-6\">",
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 9
+        }
+      ],
+      "passes": 41
+    },
+    {
+      "theme": "light",
+      "path": "/contact/",
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "html": "<a href=\"https://wa.me/201002127404?text=Hello%20Omar%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"Chat with Omar on WhatsApp\" title=\"Chat on WhatsApp\" class=\"group fixed bottom-4 right-4 z-50 inline-flex h-13 items-center justify-center gap-2 rounded-full border border-white/15 bg-[#25D366] px-4 text-sm font-semibold text-white shadow-[0_16px_45px_-16px_rgba(37,211,102,0.85)] transition duration-300 hover:-translate-y-1 hover:bg-[#20bd5a] hover:shadow-[0_20px_55px_-14px_rgba(37,211,102,0.9)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-6 sm:right-6\">",
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ],
+      "passes": 42
+    },
+    {
+      "theme": "light",
+      "path": "/projects/finsight-finance-analysis/",
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "html": "<a href=\"https://wa.me/201002127404?text=Hello%20Omar%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"Chat with Omar on WhatsApp\" title=\"Chat on WhatsApp\" class=\"group fixed bottom-4 right-4 z-50 inline-flex h-13 items-center justify-center gap-2 rounded-full border border-white/15 bg-[#25D366] px-4 text-sm font-semibold text-white shadow-[0_16px_45px_-16px_rgba(37,211,102,0.85)] transition duration-300 hover:-translate-y-1 hover:bg-[#20bd5a] hover:shadow-[0_20px_55px_-14px_rgba(37,211,102,0.9)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-6 sm:right-6\">",
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 11
+        }
+      ],
+      "passes": 41
+    },
+    {
+      "theme": "dark",
+      "path": "/",
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodes": [
+            {
+              "target": [
+                ".right-4"
+              ],
+              "html": "<a href=\"https://wa.me/201002127404?text=Hello%20Omar%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"Chat with Omar on WhatsApp\" title=\"Chat on WhatsApp\" class=\"group fixed bottom-4 right-4 z-50 inline-flex h-13 items-center justify-center gap-2 rounded-full border border-white/15 bg-[#25D366] px-4 text-sm font-semibold text-white shadow-[0_16px_45px_-16px_rgba(37,211,102,0.85)] transition duration-300 hover:-translate-y-1 hover:bg-[#20bd5a] hover:shadow-[0_20px_55px_-14px_rgba(37,211,102,0.9)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-6 sm:right-6\">",
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 9
+        }
+      ],
+      "passes": 41
+    },
+    {
+      "theme": "dark",
+      "path": "/about/",
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "html": "<a href=\"https://wa.me/201002127404?text=Hello%20Omar%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"Chat with Omar on WhatsApp\" title=\"Chat on WhatsApp\" class=\"group fixed bottom-4 right-4 z-50 inline-flex h-13 items-center justify-center gap-2 rounded-full border border-white/15 bg-[#25D366] px-4 text-sm font-semibold text-white shadow-[0_16px_45px_-16px_rgba(37,211,102,0.85)] transition duration-300 hover:-translate-y-1 hover:bg-[#20bd5a] hover:shadow-[0_20px_55px_-14px_rgba(37,211,102,0.9)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-6 sm:right-6\">",
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ],
+      "passes": 41
+    },
+    {
+      "theme": "dark",
+      "path": "/projects/",
+      "violations": [
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "description": "Ensure the order of headings is semantically correct",
+          "nodes": [
+            {
+              "target": [
+                "div:nth-child(1) > article > .focus-visible\\:-outline-offset-2.h-full.flex-col > .flex-1.sm\\:p-6.p-5 > .items-start.gap-3.justify-between > h3"
+              ],
+              "html": "<h3 class=\"text-xl font-semibold leading-tight tracking-[-0.025em]\">FinSight — Finance Analysis</h3>",
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "html": "<a href=\"https://wa.me/201002127404?text=Hello%20Omar%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"Chat with Omar on WhatsApp\" title=\"Chat on WhatsApp\" class=\"group fixed bottom-4 right-4 z-50 inline-flex h-13 items-center justify-center gap-2 rounded-full border border-white/15 bg-[#25D366] px-4 text-sm font-semibold text-white shadow-[0_16px_45px_-16px_rgba(37,211,102,0.85)] transition duration-300 hover:-translate-y-1 hover:bg-[#20bd5a] hover:shadow-[0_20px_55px_-14px_rgba(37,211,102,0.9)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-6 sm:right-6\">",
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 3
+        }
+      ],
+      "passes": 41
+    },
+    {
+      "theme": "dark",
+      "path": "/certificates/",
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "html": "<a href=\"https://wa.me/201002127404?text=Hello%20Omar%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"Chat with Omar on WhatsApp\" title=\"Chat on WhatsApp\" class=\"group fixed bottom-4 right-4 z-50 inline-flex h-13 items-center justify-center gap-2 rounded-full border border-white/15 bg-[#25D366] px-4 text-sm font-semibold text-white shadow-[0_16px_45px_-16px_rgba(37,211,102,0.85)] transition duration-300 hover:-translate-y-1 hover:bg-[#20bd5a] hover:shadow-[0_20px_55px_-14px_rgba(37,211,102,0.9)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-6 sm:right-6\">",
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 9
+        }
+      ],
+      "passes": 41
+    },
+    {
+      "theme": "dark",
+      "path": "/contact/",
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "html": "<a href=\"https://wa.me/201002127404?text=Hello%20Omar%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"Chat with Omar on WhatsApp\" title=\"Chat on WhatsApp\" class=\"group fixed bottom-4 right-4 z-50 inline-flex h-13 items-center justify-center gap-2 rounded-full border border-white/15 bg-[#25D366] px-4 text-sm font-semibold text-white shadow-[0_16px_45px_-16px_rgba(37,211,102,0.85)] transition duration-300 hover:-translate-y-1 hover:bg-[#20bd5a] hover:shadow-[0_20px_55px_-14px_rgba(37,211,102,0.9)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-6 sm:right-6\">",
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ],
+      "passes": 42
+    },
+    {
+      "theme": "dark",
+      "path": "/projects/finsight-finance-analysis/",
+      "violations": [
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "nodes": [
+            {
+              "target": [
+                ".bottom-4"
+              ],
+              "html": "<a href=\"https://wa.me/201002127404?text=Hello%20Omar%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"Chat with Omar on WhatsApp\" title=\"Chat on WhatsApp\" class=\"group fixed bottom-4 right-4 z-50 inline-flex h-13 items-center justify-center gap-2 rounded-full border border-white/15 bg-[#25D366] px-4 text-sm font-semibold text-white shadow-[0_16px_45px_-16px_rgba(37,211,102,0.85)] transition duration-300 hover:-translate-y-1 hover:bg-[#20bd5a] hover:shadow-[0_20px_55px_-14px_rgba(37,211,102,0.9)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:bottom-6 sm:right-6\">",
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 11
+        }
+      ],
+      "passes": 41
+    }
+  ],
+  "form": {
+    "valid": false,
+    "fields": [
+      {
+        "name": "",
+        "required": false,
+        "type": "color",
+        "label": "Accent"
+      },
+      {
+        "name": "",
+        "required": false,
+        "type": "color",
+        "label": "Background"
+      },
+      {
+        "name": "",
+        "required": false,
+        "type": "color",
+        "label": "Text"
+      },
+      {
+        "name": "",
+        "required": false,
+        "type": "color",
+        "label": "Border"
+      },
+      {
+        "name": "name",
+        "required": true,
+        "type": "text",
+        "label": "Name"
+      },
+      {
+        "name": "email",
+        "required": true,
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "name": "subject",
+        "required": true,
+        "type": "text",
+        "label": "Subject"
+      },
+      {
+        "name": "message",
+        "required": true,
+        "type": "textarea",
+        "label": "Message"
+      }
+    ],
+    "links": [
+      "mailto:orezk337@gmail.com",
+      "tel:+201002127404",
+      "mailto:orezk337@gmail.com",
+      "https://wa.me/201002127404?text=Hello%20Omar%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+    ]
+  },
+  "invalidSubmit": {
+    "path": "/contact/",
+    "focus": "name",
+    "invalid": 5
+  },
+  "copyEmail": {
+    "text": "Copy email"
+  },
+  "keyboard": {
+    "focus": "<a class=\"skip-link\" href=\"#main-content\">Skip to content</a>",
+    "outline": "rgb(56, 189, 248) solid 2px",
+    "rect": {
+      "x": 12,
+      "y": 4.463310718536377,
+      "width": 132.65625,
+      "height": 45,
+      "top": 4.463310718536377,
+      "right": 144.65625,
+      "bottom": 49.46331071853638,
+      "left": 12
+    }
+  },
+  "reduced": {
+    "matches": true,
+    "scroll": "auto",
+    "mainOpacity": "1"
+  },
+  "noJs": {
+    "mainOpacity": "0",
+    "h1": "Data made clear. Decisions made better."
+  },
+  "errors": []
+}
