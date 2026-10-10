@@ -21,6 +21,7 @@ docs/audit/             Audit documentation and retained evidence
   AUDIT_REPORT.md        Repair/release findings and verification
   AUDIT_BASELINE.md      Original audit
   audit-evidence/        Dated evidence, release screenshots and measurements
+docs/maintenance/       Folder inventory, cleanup decisions and check results
 .github/workflows/      Existing CI/deployment workflow (unchanged)
 Certifcations/          Local source uploads; existing spelling retained
 .tools/                 Local portable Node runtime used by the Windows launcher

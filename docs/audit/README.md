@@ -16,7 +16,7 @@ not the current deployment status after future changes.
 ## Current tooling versus archived scripts
 
 Run maintained commands from the repository root. Current browser tests live in
-[`tests/`](../../../tests/) and maintained helpers in [`scripts/`](../../../scripts/).
+[`tests/`](../../tests/) and maintained helpers in [`scripts/`](../../scripts/).
 The performance helper writes new evidence into this archive, resolved relative
 to its script file, so it does not recreate a root-level `audit-evidence` folder.
 
