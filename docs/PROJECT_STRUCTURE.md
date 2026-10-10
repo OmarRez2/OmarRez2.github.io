@@ -53,6 +53,13 @@ Run all npm commands from the repository root.
 - `assets-src/` is not in Git. Back it up separately if the originals matter.
 - Generated output (`.next/`, `out/`, `test-results/`, `playwright-report/`,
   `tsconfig.tsbuildinfo`) is git-ignored and rebuildable; see the README.
+- `node_modules/`, `.tools/` and `.remember/` carry the Windows Hidden attribute so
+  File Explorer shows a minimal root. This is only a file attribute: Git, npm and
+  the launcher are unaffected. `npm ci` recreates `node_modules/` without it; re-run
+  `attrib +h node_modules` if wanted. `next-env.d.ts` stays visible because Next.js
+  rewrites it and Windows can refuse writes to hidden files.
+- The TypeScript incremental cache is written to `.next/cache/`, so no
+  `tsconfig.tsbuildinfo` appears at the root.
 - Do not move `next-env.d.ts`, framework config files or `docs/audit/audit-evidence/`
   (ESLint ignores that folder by path).
 
@@ -64,3 +71,6 @@ Run all npm commands from the repository root.
   into `assets-src/`; `.gitignore` updated. No file was renamed or deleted.
   `docs/maintenance/cleanup-2026-10-10.md` and `docs/audit/` still mention the old
   `Certifcations/` name; they are historical and were left unchanged.
+- 2026-10-10: root decluttered: TypeScript cache redirected into `.next/cache/`,
+  generated folders removed, `node_modules/`, `.tools/`, `.remember/` hidden,
+  `.remember/**` added to ESLint ignores.
