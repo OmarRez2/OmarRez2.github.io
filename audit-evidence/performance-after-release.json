@@ -1,0 +1,26 @@
+{
+  "target": "https://omarrez2.github.io/",
+  "timestamp": "2026-10-10T09:26:03.863Z",
+  "conditions": "390x844, cold cache, 4x CPU, 150ms latency, 200000 bytes/s download; analytics blocked",
+  "samples": [
+    {
+      "lcpMs": 1692,
+      "cls": 0,
+      "jsDecodedBytes": 756172,
+      "transferBytes": 463269
+    },
+    {
+      "lcpMs": 1916,
+      "cls": 0,
+      "jsDecodedBytes": 756172,
+      "transferBytes": 463269
+    },
+    {
+      "lcpMs": 1576,
+      "cls": 0,
+      "jsDecodedBytes": 756172,
+      "transferBytes": 463269
+    }
+  ],
+  "medianLcpMs": 1692
+}
