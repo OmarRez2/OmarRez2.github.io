@@ -31,6 +31,7 @@ try {
   }
 } finally { await browser.close(); }
 const result = { target, timestamp: new Date().toISOString(), conditions: '390x844, cold cache, 4x CPU, 150ms latency, 200000 bytes/s download; analytics blocked', samples, medianLcpMs: samples.map(s => s.lcpMs).sort((a,b) => a-b)[1] };
-await mkdir('audit-evidence', { recursive: true });
-await writeFile(`audit-evidence/performance-${label}.json`, JSON.stringify(result, null, 2));
+const evidenceDirectory = new URL('../docs/audit/audit-evidence/', import.meta.url);
+await mkdir(evidenceDirectory, { recursive: true });
+await writeFile(new URL(`performance-${label}.json`, evidenceDirectory), JSON.stringify(result, null, 2));
 console.log(JSON.stringify(result, null, 2));

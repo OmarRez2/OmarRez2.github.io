@@ -49,5 +49,6 @@ On Windows use `npm.cmd` if PowerShell blocks npm.ps1. Optionally set
 `TEST_BASE_URL=https://omarrez2.github.io` runs the same browser suite against
 the deployed site. Generated reports/screenshots live in ignored
 `playwright-report` and `test-results`; CI uploads them as an artifact.
-See `AUDIT_REPORT.md` for current repair status and `AUDIT_BASELINE.md` for the
-original investigation. `audit-evidence` retains baseline and release evidence.
+See [the audit report](docs/audit/AUDIT_REPORT.md) for repair status and
+[the baseline audit](docs/audit/AUDIT_BASELINE.md) for the original investigation.
+[Audit evidence](docs/audit/audit-evidence/) retains baseline and release evidence.
