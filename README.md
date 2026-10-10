@@ -6,26 +6,11 @@ A multi-page, responsive portfolio built with Next.js, TypeScript, Tailwind CSS,
 
 ## Project structure
 
-```text
-src/                    Application code
-  app/                  Routes, layouts, metadata and global styles
-  components/           Shared UI (including components/ui)
-  lib/                  Portfolio data, appearance settings and utilities
-public/                 Website assets; paths are public URLs
-  documents/            Downloadable CV
-  images/               Portraits, certificates and project screenshots
-tests/                  Playwright browser regression tests
-scripts/                Maintained local server and performance helpers
-docs/audit/             Audit documentation and retained evidence
-  README.md             Archive index and historical-script caveats
-  AUDIT_REPORT.md        Repair/release findings and verification
-  AUDIT_BASELINE.md      Original audit
-  audit-evidence/        Dated evidence, release screenshots and measurements
-docs/maintenance/       Folder inventory, cleanup decisions and check results
-.github/workflows/      Existing CI/deployment workflow (unchanged)
-Certifcations/          Local source uploads; existing spelling retained
-.tools/                 Local portable Node runtime used by the Windows launcher
-```
+The full folder guide, including where new files belong, is in
+[docs/PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md). In short: `src/` holds
+the application, `public/` holds published assets, `assets-src/` holds local,
+git-ignored original images and certificate uploads, `tests/` and `scripts/`
+hold maintained tooling, and `docs/` holds documentation and audit evidence.
 
 Framework/tool configuration stays at the root: `package.json`,
 `package-lock.json`, `next.config.ts`, `tsconfig.json`, `next-env.d.ts`,
@@ -49,7 +34,7 @@ These paths remain ignored by Git:
 | `next-env.d.ts` | Generated Next.js declarations; retained because TypeScript includes this file. |
 
 Do not treat `docs/audit/audit-evidence/` as disposable build output: it contains
-retained historical evidence. Likewise, `.tools/` and `Certifcations/` are local
+retained historical evidence. Likewise, `.tools/` and `assets-src/` are local
 resources, not generated caches, and should not be bulk-cleaned.
 
 Older portrait variants (`public/images/omar-hero.webp`, `omar-profile.webp`)

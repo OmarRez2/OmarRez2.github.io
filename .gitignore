@@ -26,16 +26,15 @@
 # production
 /build
 
-# local source images (optimized WebP files are published)
+# local source originals (optimized WebP/JPG copies in public/ are published)
+/assets-src/
+# guard: never publish raw PNGs from public/
 /public/images/**/*.png
 /public/file.svg
 /public/globe.svg
 /public/next.svg
 /public/vercel.svg
 /public/window.svg
-
-# Local certificate source uploads (optimized copies are published)
-/Certifcations/
 
 # misc
 .DS_Store
